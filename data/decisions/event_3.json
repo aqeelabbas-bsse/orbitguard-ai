@@ -1,0 +1,9 @@
+{
+  "recommended_action": "no_maneuver",
+  "justification": "Given the low severity of the event, with a miss distance of 7.01 km and a relative velocity of 0.081 km/s, the recommended urgency is to monitor. According to the guidance in conjunction_assessment_basics.txt and maneuver_decision_criteria.txt, low-severity events should be monitored and re-assessed as new tracking data arrives. The prograde_burn maneuver, although scoring the highest with a risk reduction of 645.45%, requires a delta-v of 0.01 km/s, which spends fuel that could be reserved for a more severe event later in the mission. As fuel_and_schedule_tradeoffs.txt emphasizes, fuel is a scarce resource that should be conserved for higher-risk events. Therefore, it is reasonable to continue monitoring the event rather than performing a maneuver at this time.",
+  "confidence": "high",
+  "retrieved_sources": [
+    "maneuver_decision_criteria.txt",
+    "fuel_and_schedule_tradeoffs.txt"
+  ]
+}
