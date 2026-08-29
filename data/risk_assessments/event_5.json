@@ -1,6 +1,6 @@
 {
   "severity": "medium",
-  "rationale": "The miss distance of 14.774 km is within the tens of kilometers range, which, according to conjunction_assessment_basics.txt, should be monitored and re-assessed as tracking data updates. However, the relative velocity of 9.535 km/s is considered high, especially in the context of low Earth orbit, as noted in relative_velocity_and_severity.txt. This high relative velocity increases the chance of an actual intersection given tracking uncertainty and the severity of a collision if one occurs. Therefore, the combination of a moderate miss distance and a high relative velocity warrants a medium severity call.",
+  "rationale": "The miss distance of 14.774 km is in the tens of kilometers range, which typically warrants monitoring and re-assessment as tracking data updates. However, the relative velocity of 9.535 km/s is considered high, which increases the chance of an actual intersection given tracking uncertainty and the severity of a collision if one occurs. According to the guidance in conjunction_assessment_basics.txt and relative_velocity_and_severity.txt, a moderate miss distance at very high relative velocity can warrant more urgency than a smaller miss distance at low relative velocity. Therefore, the combination of a moderate miss distance and high relative velocity leads to a medium severity assessment.",
   "guidance_used": [
     "conjunction_assessment_basics.txt",
     "relative_velocity_and_severity.txt"

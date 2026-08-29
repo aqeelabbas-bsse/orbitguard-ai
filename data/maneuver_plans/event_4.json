@@ -53,6 +53,6 @@
     "radial_burn"
   ],
   "severity": "low",
-  "rationale": "The miss distance of 9.409 km is relatively large, and the relative velocity of 0.073 km/s is low. According to the guidance in conjunction_assessment_basics.txt, passes in the tens of kilometers range should be monitored and re-assessed as tracking data updates. Given these factors, the event does not warrant high urgency. As noted in relative_velocity_and_severity.txt, low relative velocity reduces the risk of a collision and its potential consequences.",
+  "rationale": "The miss distance of 9.409 km is relatively large, and the relative velocity of 0.073 km/s is low. According to the guidance in conjunction_assessment_basics.txt, passes in the tens of kilometers range should be monitored and re-assessed as tracking data updates. Given these parameters, the risk is considered low. The low relative velocity reduces the concern for potential collision consequences, as noted in relative_velocity_and_severity.txt.",
   "recommended_urgency": "monitor"
 }

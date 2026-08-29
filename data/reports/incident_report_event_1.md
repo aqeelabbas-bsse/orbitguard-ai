@@ -1,6 +1,6 @@
 # Collision Avoidance Incident Report
 
-**Generated:** 2026-08-29 11:59 UTC
+**Generated:** 2026-08-29 12:04 UTC
 
 **Objects involved:** STARLINK-1362 and STARLINK-1372
 
@@ -13,7 +13,7 @@
 ## Risk Assessment
 - **Severity:** low
 - **Recommended urgency:** monitor
-- **Rationale:** The miss distance of 2.895 km is relatively close, but the relative velocity of 0.058 km/s is low. According to the guidance in relative_velocity_and_severity.txt and conjunction_assessment_basics.txt, a low relative velocity reduces the risk of collision and the severity of a potential impact. Given these factors, the event is considered low severity. As stated in conjunction_assessment_basics.txt, passes under a few kilometers deserve close review, but the low relative velocity in this case suggests a lower level of urgency.
+- **Rationale:** The miss distance of 2.895 km is relatively close, but the relative velocity of 0.058 km/s is low. According to the guidance in relative_velocity_and_severity.txt and conjunction_assessment_basics.txt, a low relative velocity reduces the risk of collision and the potential consequences of an impact. Given these factors, the event is considered low severity.
 
 ## Maneuver Options Considered
 - No-maneuver baseline miss distance (two-body simulation, Phase 3): 2.776 km
@@ -26,6 +26,6 @@
 ## Final Recommendation
 - **Recommended action:** no_maneuver
 - **Confidence:** medium
-- **Justification:** Given the low severity of the event, as indicated by the relatively close miss distance of 2.895 km but low relative velocity of 0.058 km/s, and the guidance in relative_velocity_and_severity.txt and conjunction_assessment_basics.txt, a cautious approach is warranted. The prograde_burn maneuver offers a significant risk reduction of 684.69%, but its fuel cost, although small at 0.01 km/s delta-v, should be weighed against the low severity of the event. As stated in maneuver_decision_criteria.txt and fuel_and_schedule_tradeoffs.txt, low-severity events are typically monitored and re-assessed rather than acted upon immediately, especially when considering the scarce resource of fuel. Therefore, continuing to monitor the situation is the most appropriate action at this time, balancing the risk against the cost of maneuvering.
+- **Justification:** Given the low severity of the event, as indicated by the relatively close miss distance of 2.895 km but low relative velocity of 0.058 km/s, and the guidance in maneuver_decision_criteria.txt and fuel_and_schedule_tradeoffs.txt, it is reasonable to monitor the situation rather than perform an immediate maneuver. The prograde_burn option, although offering a significant risk reduction of 684.69%, would spend a finite amount of fuel, which is a scarce resource. The fuel cost, although not explicitly stated as high, should be conserved for potentially more severe events later in the mission life. Therefore, continuing to monitor the event and reassess as new tracking data arrives is the most appropriate course of action, aligning with the recommended urgency of 'monitor'.
 
 *Guidance referenced: maneuver_decision_criteria.txt, fuel_and_schedule_tradeoffs.txt*

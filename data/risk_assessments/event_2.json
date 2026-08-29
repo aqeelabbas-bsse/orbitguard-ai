@@ -1,9 +1,9 @@
 {
   "severity": "low",
-  "rationale": "The miss distance of 3.204 km and relative velocity of 0.024 km/s indicate a low-risk event. According to the guidance in conjunction_assessment_basics.txt, passes under a few kilometers deserve close review, but the relative velocity in this case is very low, which reduces the urgency. As noted in relative_velocity_and_severity.txt, impact energy scales with the square of relative velocity, so the low relative velocity in this event reduces the potential consequences of a collision.",
+  "rationale": "The miss distance of 3.204 km and relative velocity of 0.024 km/s indicate a low-risk event. According to the guidance in conjunction_assessment_basics.txt and relative_velocity_and_severity.txt, a close pass at low relative velocity is generally less urgent. The relative velocity is particularly low in this case, which reduces the risk of collision and the potential consequences of an impact. As the miss distance is under a few kilometers, it deserves close review, but the low relative velocity suggests a lower severity.",
   "guidance_used": [
-    "relative_velocity_and_severity.txt",
-    "conjunction_assessment_basics.txt"
+    "conjunction_assessment_basics.txt",
+    "relative_velocity_and_severity.txt"
   ],
   "recommended_urgency": "monitor",
   "event": {

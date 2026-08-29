@@ -1,6 +1,6 @@
 # Collision Avoidance Incident Report
 
-**Generated:** 2026-08-29 12:00 UTC
+**Generated:** 2026-08-29 12:05 UTC
 
 **Objects involved:** STARLINK-1199 and STARLINK-1260
 
@@ -13,7 +13,7 @@
 ## Risk Assessment
 - **Severity:** medium
 - **Recommended urgency:** plan_maneuver_review
-- **Rationale:** The miss distance of 14.774 km is within the tens of kilometers range, which, according to conjunction_assessment_basics.txt, should be monitored and re-assessed as tracking data updates. However, the relative velocity of 9.535 km/s is considered high, especially in the context of low Earth orbit, as noted in relative_velocity_and_severity.txt. This high relative velocity increases the chance of an actual intersection given tracking uncertainty and the severity of a collision if one occurs. Therefore, the combination of a moderate miss distance and a high relative velocity warrants a medium severity call.
+- **Rationale:** The miss distance of 14.774 km is in the tens of kilometers range, which typically warrants monitoring and re-assessment as tracking data updates. However, the relative velocity of 9.535 km/s is considered high, which increases the chance of an actual intersection given tracking uncertainty and the severity of a collision if one occurs. According to the guidance in conjunction_assessment_basics.txt and relative_velocity_and_severity.txt, a moderate miss distance at very high relative velocity can warrant more urgency than a smaller miss distance at low relative velocity. Therefore, the combination of a moderate miss distance and high relative velocity leads to a medium severity assessment.
 
 ## Maneuver Options Considered
 - No-maneuver baseline miss distance (two-body simulation, Phase 3): 41.513 km
@@ -26,6 +26,6 @@
 ## Final Recommendation
 - **Recommended action:** prograde_burn
 - **Confidence:** high
-- **Justification:** Given the medium severity of the event due to a moderate miss distance of 14.774 km and a high relative velocity of 9.535 km/s, a maneuver review is warranted as per maneuver_decision_criteria.txt. The prograde_burn maneuver offers a significant risk reduction of 102.88%, increasing the miss distance to 84.22 km, which substantially mitigates the collision risk. Although it spends a small amount of fuel (delta_v_km_s of 0.01), the risk reduction achieved per unit of fuel spent is considerable, making it a preferable choice. The guidance from fuel_and_schedule_tradeoffs.txt emphasizes the importance of conserving fuel, but in this case, the fuel cost is not prohibitively high, especially considering the medium severity of the event and the substantial risk reduction achieved.
+- **Justification:** Given the medium severity assessment of the STARLINK-1199 <-> STARLINK-1260 conjunction event, with a moderate miss distance of 14.774 km and a high relative velocity of 9.535 km/s, the guidance in maneuver_decision_criteria.txt suggests a maneuver review is warranted. The prograde_burn maneuver achieves a significant risk reduction of 102.88%, increasing the miss distance to 84.22 km, with a relatively low fuel cost of 0.01 km/s delta-v. Although the fuel cost is a consideration, as emphasized in fuel_and_schedule_tradeoffs.txt, the risk reduction achieved by this maneuver justifies its selection, especially given the high relative velocity and potential consequences of a collision. The prograde_burn maneuver has the highest score of 100.376, further supporting its selection as the recommended action.
 
 *Guidance referenced: maneuver_decision_criteria.txt, fuel_and_schedule_tradeoffs.txt*
