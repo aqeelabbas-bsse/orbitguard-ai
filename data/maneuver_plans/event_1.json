@@ -1,0 +1,58 @@
+{
+  "event": {
+    "object_a": "STARLINK-1362",
+    "object_b": "STARLINK-1372",
+    "miss_distance_km": 2.895,
+    "relative_velocity_km_s": 0.058,
+    "time_of_closest_approach_utc": "2026-08-31T07:46:53Z",
+    "t_minutes_from_now": 2665
+  },
+  "maneuverable_object": "STARLINK-1362",
+  "other_object": "STARLINK-1372",
+  "decision_t_minutes_from_now": 2575,
+  "original_miss_distance_km_sgp4": 2.895,
+  "baseline_miss_distance_km": 2.776,
+  "candidates": [
+    {
+      "maneuver_name": "prograde_burn",
+      "direction": "prograde",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 21.783
+    },
+    {
+      "maneuver_name": "radial_burn",
+      "direction": "radial",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 2.499
+    }
+  ],
+  "scored_candidates": [
+    {
+      "maneuver_name": "prograde_burn",
+      "direction": "prograde",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 21.783,
+      "risk_reduction_pct": 684.69,
+      "delta_v_m_s": 10.0,
+      "schedule_impact": 1.0,
+      "score": 682.19
+    },
+    {
+      "maneuver_name": "radial_burn",
+      "direction": "radial",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 2.499,
+      "risk_reduction_pct": -9.98,
+      "delta_v_m_s": 10.0,
+      "schedule_impact": 1.5,
+      "score": -13.478
+    }
+  ],
+  "ranked_best_to_worst": [
+    "prograde_burn",
+    "radial_burn"
+  ],
+  "severity": "low",
+  "rationale": "The miss distance of 2.895 km is relatively close, but the relative velocity of 0.058 km/s is low. According to the guidance in relative_velocity_and_severity.txt and conjunction_assessment_basics.txt, a low relative velocity reduces the risk of collision and the severity of a potential impact. Given these factors, the event is considered low severity. As stated in conjunction_assessment_basics.txt, passes under a few kilometers deserve close review, but the low relative velocity in this case suggests a lower level of urgency.",
+  "recommended_urgency": "monitor"
+}

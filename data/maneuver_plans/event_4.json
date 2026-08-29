@@ -1,0 +1,58 @@
+{
+  "event": {
+    "object_a": "STARLINK-1260",
+    "object_b": "STARLINK-1296",
+    "miss_distance_km": 9.409,
+    "relative_velocity_km_s": 0.073,
+    "time_of_closest_approach_utc": "2026-08-31T19:46:48Z",
+    "t_minutes_from_now": 3385
+  },
+  "maneuverable_object": "STARLINK-1260",
+  "other_object": "STARLINK-1296",
+  "decision_t_minutes_from_now": 3295,
+  "original_miss_distance_km_sgp4": 9.409,
+  "baseline_miss_distance_km": 2.171,
+  "candidates": [
+    {
+      "maneuver_name": "prograde_burn",
+      "direction": "prograde",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 27.891
+    },
+    {
+      "maneuver_name": "radial_burn",
+      "direction": "radial",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 8.454
+    }
+  ],
+  "scored_candidates": [
+    {
+      "maneuver_name": "prograde_burn",
+      "direction": "prograde",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 27.891,
+      "risk_reduction_pct": 1184.71,
+      "delta_v_m_s": 10.0,
+      "schedule_impact": 1.0,
+      "score": 1182.208
+    },
+    {
+      "maneuver_name": "radial_burn",
+      "direction": "radial",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 8.454,
+      "risk_reduction_pct": 289.41,
+      "delta_v_m_s": 10.0,
+      "schedule_impact": 1.5,
+      "score": 285.906
+    }
+  ],
+  "ranked_best_to_worst": [
+    "prograde_burn",
+    "radial_burn"
+  ],
+  "severity": "low",
+  "rationale": "The miss distance of 9.409 km is relatively large, and the relative velocity of 0.073 km/s is low. According to the guidance in conjunction_assessment_basics.txt, passes in the tens of kilometers range should be monitored and re-assessed as tracking data updates. Given these factors, the event does not warrant high urgency. As noted in relative_velocity_and_severity.txt, low relative velocity reduces the risk of a collision and its potential consequences.",
+  "recommended_urgency": "monitor"
+}

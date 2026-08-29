@@ -1,0 +1,58 @@
+{
+  "event": {
+    "object_a": "STARLINK-1368",
+    "object_b": "STARLINK-1372",
+    "miss_distance_km": 7.01,
+    "relative_velocity_km_s": 0.081,
+    "time_of_closest_approach_utc": "2026-08-29T21:36:54Z",
+    "t_minutes_from_now": 615
+  },
+  "maneuverable_object": "STARLINK-1368",
+  "other_object": "STARLINK-1372",
+  "decision_t_minutes_from_now": 525,
+  "original_miss_distance_km_sgp4": 7.01,
+  "baseline_miss_distance_km": 2.066,
+  "candidates": [
+    {
+      "maneuver_name": "prograde_burn",
+      "direction": "prograde",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 15.401
+    },
+    {
+      "maneuver_name": "radial_burn",
+      "direction": "radial",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 1.453
+    }
+  ],
+  "scored_candidates": [
+    {
+      "maneuver_name": "prograde_burn",
+      "direction": "prograde",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 15.401,
+      "risk_reduction_pct": 645.45,
+      "delta_v_m_s": 10.0,
+      "schedule_impact": 1.0,
+      "score": 642.95
+    },
+    {
+      "maneuver_name": "radial_burn",
+      "direction": "radial",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 1.453,
+      "risk_reduction_pct": -29.67,
+      "delta_v_m_s": 10.0,
+      "schedule_impact": 1.5,
+      "score": -33.171
+    }
+  ],
+  "ranked_best_to_worst": [
+    "prograde_burn",
+    "radial_burn"
+  ],
+  "severity": "low",
+  "rationale": "The miss distance of 7.01 km is relatively large, and the relative velocity of 0.081 km/s is low, indicating a low risk of collision. According to the guidance in conjunction_assessment_basics.txt, passes in the tens of kilometers range should be monitored and re-assessed as tracking data updates. Given the specific details of this event, the risk is considered low.",
+  "recommended_urgency": "monitor"
+}

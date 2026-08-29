@@ -1,0 +1,58 @@
+{
+  "event": {
+    "object_a": "STARLINK-1362",
+    "object_b": "STARLINK-1368",
+    "miss_distance_km": 3.204,
+    "relative_velocity_km_s": 0.024,
+    "time_of_closest_approach_utc": "2026-09-01T14:01:53Z",
+    "t_minutes_from_now": 4480
+  },
+  "maneuverable_object": "STARLINK-1362",
+  "other_object": "STARLINK-1368",
+  "decision_t_minutes_from_now": 4390,
+  "original_miss_distance_km_sgp4": 3.204,
+  "baseline_miss_distance_km": 1.93,
+  "candidates": [
+    {
+      "maneuver_name": "prograde_burn",
+      "direction": "prograde",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 13.949
+    },
+    {
+      "maneuver_name": "radial_burn",
+      "direction": "radial",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 1.144
+    }
+  ],
+  "scored_candidates": [
+    {
+      "maneuver_name": "prograde_burn",
+      "direction": "prograde",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 13.949,
+      "risk_reduction_pct": 622.75,
+      "delta_v_m_s": 10.0,
+      "schedule_impact": 1.0,
+      "score": 620.246
+    },
+    {
+      "maneuver_name": "radial_burn",
+      "direction": "radial",
+      "delta_v_km_s": 0.01,
+      "new_miss_distance_km": 1.144,
+      "risk_reduction_pct": -40.73,
+      "delta_v_m_s": 10.0,
+      "schedule_impact": 1.5,
+      "score": -44.225
+    }
+  ],
+  "ranked_best_to_worst": [
+    "prograde_burn",
+    "radial_burn"
+  ],
+  "severity": "low",
+  "rationale": "The miss distance of 3.204 km and relative velocity of 0.024 km/s indicate a low-risk event. According to the guidance in conjunction_assessment_basics.txt, passes under a few kilometers deserve close review, but the relative velocity in this case is very low, which reduces the urgency. As noted in relative_velocity_and_severity.txt, impact energy scales with the square of relative velocity, so the low relative velocity in this event reduces the potential consequences of a collision.",
+  "recommended_urgency": "monitor"
+}
