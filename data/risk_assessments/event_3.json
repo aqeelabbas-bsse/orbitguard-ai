@@ -1,0 +1,22 @@
+{
+  "severity": "low",
+  "rationale": "The miss distance of 7.01 km is relatively large, and the relative velocity of 0.081 km/s is low, indicating a low risk of collision. According to the guidance in conjunction_assessment_basics.txt, passes in the tens of kilometers range should be monitored and re-assessed as tracking data updates. Given the specific details of this event, the risk is considered low.",
+  "guidance_used": [
+    "conjunction_assessment_basics.txt",
+    "relative_velocity_and_severity.txt"
+  ],
+  "recommended_urgency": "monitor",
+  "event": {
+    "object_a": "STARLINK-1368",
+    "object_b": "STARLINK-1372",
+    "miss_distance_km": 7.01,
+    "relative_velocity_km_s": 0.081,
+    "time_of_closest_approach_utc": "2026-08-29T21:36:54Z",
+    "t_minutes_from_now": 615
+  },
+  "retrieved_sources": [
+    "relative_velocity_and_severity.txt",
+    "conjunction_assessment_basics.txt",
+    "maneuver_decision_criteria.txt"
+  ]
+}

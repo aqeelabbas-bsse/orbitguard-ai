@@ -1,0 +1,22 @@
+{
+  "severity": "low",
+  "rationale": "The miss distance of 9.409 km is relatively large, and the relative velocity of 0.073 km/s is low. According to the guidance in conjunction_assessment_basics.txt, passes in the tens of kilometers range should be monitored and re-assessed as tracking data updates. Given these factors, the event does not warrant high urgency. As noted in relative_velocity_and_severity.txt, low relative velocity reduces the risk of a collision and its potential consequences.",
+  "guidance_used": [
+    "relative_velocity_and_severity.txt",
+    "conjunction_assessment_basics.txt"
+  ],
+  "recommended_urgency": "monitor",
+  "event": {
+    "object_a": "STARLINK-1260",
+    "object_b": "STARLINK-1296",
+    "miss_distance_km": 9.409,
+    "relative_velocity_km_s": 0.073,
+    "time_of_closest_approach_utc": "2026-08-31T19:46:48Z",
+    "t_minutes_from_now": 3385
+  },
+  "retrieved_sources": [
+    "relative_velocity_and_severity.txt",
+    "conjunction_assessment_basics.txt",
+    "maneuver_decision_criteria.txt"
+  ]
+}

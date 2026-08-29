@@ -1,0 +1,20 @@
+Background: Cosmos 1408 Debris Field
+
+In November 2021, a direct-ascent anti-satellite missile test destroyed the
+defunct Soviet-era satellite Cosmos 1408, which had been in low Earth orbit
+since the 1980s. The test created a large field of trackable debris
+fragments spread across a range of altitudes and orbital planes, in addition
+to a much larger number of smaller, harder-to-track fragments.
+
+Because the fragments were not deliberately dispersed to a single controlled
+orbit, they now cross the orbital paths used by many active satellites,
+including large constellations in low Earth orbit. Fragments from events
+like this remain a long-term collision risk precisely because they are
+numerous, individually small (making some hard to track precisely), and
+scattered across orbital planes that intersect heavily used altitude bands.
+
+This kind of debris field is a good illustration of why debris mitigation
+guidance treats collision avoidance as protecting the broader orbital
+environment, not just the two objects in a given conjunction event — a single
+destructive event years earlier continues to generate individual close
+approaches with active missions long after it occurred.

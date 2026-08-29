@@ -1,0 +1,2218 @@
+[
+  {
+    "object_a": "STARLINK-1362",
+    "object_b": "STARLINK-1372",
+    "miss_distance_km": 2.895,
+    "relative_velocity_km_s": 0.058,
+    "time_of_closest_approach_utc": "2026-08-31T07:46:53Z",
+    "t_minutes_from_now": 2665
+  },
+  {
+    "object_a": "STARLINK-1362",
+    "object_b": "STARLINK-1368",
+    "miss_distance_km": 3.204,
+    "relative_velocity_km_s": 0.024,
+    "time_of_closest_approach_utc": "2026-09-01T14:01:53Z",
+    "t_minutes_from_now": 4480
+  },
+  {
+    "object_a": "STARLINK-1368",
+    "object_b": "STARLINK-1372",
+    "miss_distance_km": 7.01,
+    "relative_velocity_km_s": 0.081,
+    "time_of_closest_approach_utc": "2026-08-29T21:36:54Z",
+    "t_minutes_from_now": 615
+  },
+  {
+    "object_a": "STARLINK-1260",
+    "object_b": "STARLINK-1296",
+    "miss_distance_km": 9.409,
+    "relative_velocity_km_s": 0.073,
+    "time_of_closest_approach_utc": "2026-08-31T19:46:48Z",
+    "t_minutes_from_now": 3385
+  },
+  {
+    "object_a": "STARLINK-1199",
+    "object_b": "STARLINK-1260",
+    "miss_distance_km": 14.774,
+    "relative_velocity_km_s": 9.535,
+    "time_of_closest_approach_utc": "2026-08-30T11:01:31Z",
+    "t_minutes_from_now": 1420
+  },
+  {
+    "object_a": "STARLINK-1278",
+    "object_b": "STARLINK-1309",
+    "miss_distance_km": 15.724,
+    "relative_velocity_km_s": 0.497,
+    "time_of_closest_approach_utc": "2026-08-30T14:46:49Z",
+    "t_minutes_from_now": 1645
+  },
+  {
+    "object_a": "STARLINK-1283",
+    "object_b": "STARLINK-1284",
+    "miss_distance_km": 17.951,
+    "relative_velocity_km_s": 2.694,
+    "time_of_closest_approach_utc": "2026-08-30T12:06:45Z",
+    "t_minutes_from_now": 1485
+  },
+  {
+    "object_a": "STARLINK-1153",
+    "object_b": "STARLINK-1202",
+    "miss_distance_km": 19.567,
+    "relative_velocity_km_s": 11.668,
+    "time_of_closest_approach_utc": "2026-08-30T01:11:21Z",
+    "t_minutes_from_now": 830
+  },
+  {
+    "object_a": "STARLINK-1305",
+    "object_b": "STARLINK-1267",
+    "miss_distance_km": 19.725,
+    "relative_velocity_km_s": 0.035,
+    "time_of_closest_approach_utc": "2026-09-01T22:41:42Z",
+    "t_minutes_from_now": 5000
+  },
+  {
+    "object_a": "STARLINK-1043",
+    "object_b": "STARLINK-1304",
+    "miss_distance_km": 22.577,
+    "relative_velocity_km_s": 4.634,
+    "time_of_closest_approach_utc": "2026-08-30T11:26:09Z",
+    "t_minutes_from_now": 1445
+  },
+  {
+    "object_a": "STARLINK-1191",
+    "object_b": "STARLINK-1222",
+    "miss_distance_km": 23.347,
+    "relative_velocity_km_s": 4.107,
+    "time_of_closest_approach_utc": "2026-08-31T15:36:33Z",
+    "t_minutes_from_now": 3135
+  },
+  {
+    "object_a": "STARLINK-1321",
+    "object_b": "STARLINK-1458",
+    "miss_distance_km": 23.826,
+    "relative_velocity_km_s": 0.566,
+    "time_of_closest_approach_utc": "2026-08-31T14:51:58Z",
+    "t_minutes_from_now": 3090
+  },
+  {
+    "object_a": "STARLINK-1273",
+    "object_b": "STARLINK-1452",
+    "miss_distance_km": 24.38,
+    "relative_velocity_km_s": 11.374,
+    "time_of_closest_approach_utc": "2026-08-30T06:51:39Z",
+    "t_minutes_from_now": 1170
+  },
+  {
+    "object_a": "STARLINK-1048",
+    "object_b": "STARLINK-1361",
+    "miss_distance_km": 24.924,
+    "relative_velocity_km_s": 8.803,
+    "time_of_closest_approach_utc": "2026-08-31T19:16:10Z",
+    "t_minutes_from_now": 3355
+  },
+  {
+    "object_a": "STARLINK-1267",
+    "object_b": "STARLINK-1357",
+    "miss_distance_km": 25.035,
+    "relative_velocity_km_s": 8.953,
+    "time_of_closest_approach_utc": "2026-08-30T04:36:44Z",
+    "t_minutes_from_now": 1035
+  },
+  {
+    "object_a": "STARLINK-1277",
+    "object_b": "STARLINK-1308",
+    "miss_distance_km": 25.179,
+    "relative_velocity_km_s": 0.111,
+    "time_of_closest_approach_utc": "2026-08-30T19:31:40Z",
+    "t_minutes_from_now": 1930
+  },
+  {
+    "object_a": "STARLINK-1169",
+    "object_b": "STARLINK-1199",
+    "miss_distance_km": 26.292,
+    "relative_velocity_km_s": 9.831,
+    "time_of_closest_approach_utc": "2026-09-02T08:41:17Z",
+    "t_minutes_from_now": 5600
+  },
+  {
+    "object_a": "STARLINK-1008",
+    "object_b": "STARLINK-1043",
+    "miss_distance_km": 28.343,
+    "relative_velocity_km_s": 0.484,
+    "time_of_closest_approach_utc": "2026-08-31T03:31:05Z",
+    "t_minutes_from_now": 2410
+  },
+  {
+    "object_a": "STARLINK-1337",
+    "object_b": "STARLINK-1454",
+    "miss_distance_km": 28.402,
+    "relative_velocity_km_s": 0.095,
+    "time_of_closest_approach_utc": "2026-09-01T21:12:00Z",
+    "t_minutes_from_now": 4910
+  },
+  {
+    "object_a": "STARLINK-1376",
+    "object_b": "STARLINK-1443",
+    "miss_distance_km": 28.619,
+    "relative_velocity_km_s": 0.66,
+    "time_of_closest_approach_utc": "2026-08-29T21:11:57Z",
+    "t_minutes_from_now": 590
+  },
+  {
+    "object_a": "STARLINK-1357",
+    "object_b": "STARLINK-1448",
+    "miss_distance_km": 29.592,
+    "relative_velocity_km_s": 1.495,
+    "time_of_closest_approach_utc": "2026-09-02T07:36:56Z",
+    "t_minutes_from_now": 5535
+  },
+  {
+    "object_a": "STARLINK-1338",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 30.703,
+    "relative_velocity_km_s": 0.031,
+    "time_of_closest_approach_utc": "2026-08-29T15:06:52Z",
+    "t_minutes_from_now": 225
+  },
+  {
+    "object_a": "STARLINK-1277",
+    "object_b": "STARLINK-1331",
+    "miss_distance_km": 31.798,
+    "relative_velocity_km_s": 8.527,
+    "time_of_closest_approach_utc": "2026-08-30T08:46:40Z",
+    "t_minutes_from_now": 1285
+  },
+  {
+    "object_a": "STARLINK-1134",
+    "object_b": "STARLINK-1154",
+    "miss_distance_km": 32.275,
+    "relative_velocity_km_s": 11.004,
+    "time_of_closest_approach_utc": "2026-08-30T02:46:15Z",
+    "t_minutes_from_now": 925
+  },
+  {
+    "object_a": "STARLINK-1274",
+    "object_b": "STARLINK-1283",
+    "miss_distance_km": 33.09,
+    "relative_velocity_km_s": 0.458,
+    "time_of_closest_approach_utc": "2026-08-31T07:46:45Z",
+    "t_minutes_from_now": 2665
+  },
+  {
+    "object_a": "STARLINK-1133",
+    "object_b": "STARLINK-1221",
+    "miss_distance_km": 33.511,
+    "relative_velocity_km_s": 0.285,
+    "time_of_closest_approach_utc": "2026-08-31T02:41:18Z",
+    "t_minutes_from_now": 2360
+  },
+  {
+    "object_a": "STARLINK-1267",
+    "object_b": "STARLINK-1278",
+    "miss_distance_km": 33.985,
+    "relative_velocity_km_s": 0.397,
+    "time_of_closest_approach_utc": "2026-09-01T03:46:44Z",
+    "t_minutes_from_now": 3865
+  },
+  {
+    "object_a": "STARLINK-1039",
+    "object_b": "STARLINK-1231",
+    "miss_distance_km": 35.848,
+    "relative_velocity_km_s": 12.039,
+    "time_of_closest_approach_utc": "2026-08-31T03:41:08Z",
+    "t_minutes_from_now": 2420
+  },
+  {
+    "object_a": "STARLINK-1309",
+    "object_b": "STARLINK-1338",
+    "miss_distance_km": 36.119,
+    "relative_velocity_km_s": 4.001,
+    "time_of_closest_approach_utc": "2026-08-30T02:36:50Z",
+    "t_minutes_from_now": 915
+  },
+  {
+    "object_a": "STARLINK-1168",
+    "object_b": "STARLINK-1260",
+    "miss_distance_km": 36.556,
+    "relative_velocity_km_s": 11.181,
+    "time_of_closest_approach_utc": "2026-09-01T03:46:19Z",
+    "t_minutes_from_now": 3865
+  },
+  {
+    "object_a": "STARLINK-1304",
+    "object_b": "STARLINK-1267",
+    "miss_distance_km": 36.798,
+    "relative_velocity_km_s": 2.987,
+    "time_of_closest_approach_utc": "2026-09-01T08:21:42Z",
+    "t_minutes_from_now": 4140
+  },
+  {
+    "object_a": "STARLINK-1321",
+    "object_b": "STARLINK-1448",
+    "miss_distance_km": 37.117,
+    "relative_velocity_km_s": 1.352,
+    "time_of_closest_approach_utc": "2026-08-31T15:36:58Z",
+    "t_minutes_from_now": 3135
+  },
+  {
+    "object_a": "STARLINK-1209",
+    "object_b": "STARLINK-1212",
+    "miss_distance_km": 37.389,
+    "relative_velocity_km_s": 1.734,
+    "time_of_closest_approach_utc": "2026-09-01T11:06:32Z",
+    "t_minutes_from_now": 4305
+  },
+  {
+    "object_a": "STARLINK-1199",
+    "object_b": "STARLINK-1392",
+    "miss_distance_km": 37.573,
+    "relative_velocity_km_s": 3.911,
+    "time_of_closest_approach_utc": "2026-08-31T20:21:31Z",
+    "t_minutes_from_now": 3420
+  },
+  {
+    "object_a": "STARLINK-1172",
+    "object_b": "STARLINK-1460",
+    "miss_distance_km": 38.078,
+    "relative_velocity_km_s": 12.209,
+    "time_of_closest_approach_utc": "2026-08-30T11:01:20Z",
+    "t_minutes_from_now": 1420
+  },
+  {
+    "object_a": "STARLINK-1356",
+    "object_b": "STARLINK-1361",
+    "miss_distance_km": 38.975,
+    "relative_velocity_km_s": 0.413,
+    "time_of_closest_approach_utc": "2026-09-02T02:16:56Z",
+    "t_minutes_from_now": 5215
+  },
+  {
+    "object_a": "STARLINK-1304",
+    "object_b": "STARLINK-1286",
+    "miss_distance_km": 39.425,
+    "relative_velocity_km_s": 2.114,
+    "time_of_closest_approach_utc": "2026-08-31T17:06:42Z",
+    "t_minutes_from_now": 3225
+  },
+  {
+    "object_a": "STARLINK-1302",
+    "object_b": "STARLINK-1305",
+    "miss_distance_km": 39.498,
+    "relative_velocity_km_s": 2.576,
+    "time_of_closest_approach_utc": "2026-08-29T16:11:41Z",
+    "t_minutes_from_now": 290
+  },
+  {
+    "object_a": "STARLINK-1168",
+    "object_b": "STARLINK-1226",
+    "miss_distance_km": 39.707,
+    "relative_velocity_km_s": 8.696,
+    "time_of_closest_approach_utc": "2026-09-01T10:21:19Z",
+    "t_minutes_from_now": 4260
+  },
+  {
+    "object_a": "STARLINK-1168",
+    "object_b": "STARLINK-1216",
+    "miss_distance_km": 39.988,
+    "relative_velocity_km_s": 11.528,
+    "time_of_closest_approach_utc": "2026-08-30T10:16:19Z",
+    "t_minutes_from_now": 1375
+  },
+  {
+    "object_a": "STARLINK-1269",
+    "object_b": "STARLINK-1446",
+    "miss_distance_km": 40.909,
+    "relative_velocity_km_s": 5.983,
+    "time_of_closest_approach_utc": "2026-09-01T18:46:30Z",
+    "t_minutes_from_now": 4765
+  },
+  {
+    "object_a": "STARLINK-1123",
+    "object_b": "STARLINK-1270",
+    "miss_distance_km": 41.798,
+    "relative_velocity_km_s": 1.359,
+    "time_of_closest_approach_utc": "2026-08-30T07:41:12Z",
+    "t_minutes_from_now": 1220
+  },
+  {
+    "object_a": "STARLINK-1279",
+    "object_b": "STARLINK-1301",
+    "miss_distance_km": 41.867,
+    "relative_velocity_km_s": 0.071,
+    "time_of_closest_approach_utc": "2026-08-29T15:46:37Z",
+    "t_minutes_from_now": 265
+  },
+  {
+    "object_a": "STARLINK-1080",
+    "object_b": "STARLINK-1222",
+    "miss_distance_km": 41.97,
+    "relative_velocity_km_s": 6.598,
+    "time_of_closest_approach_utc": "2026-08-29T18:11:14Z",
+    "t_minutes_from_now": 410
+  },
+  {
+    "object_a": "STARLINK-1338",
+    "object_b": "STARLINK-1448",
+    "miss_distance_km": 42.095,
+    "relative_velocity_km_s": 3.5,
+    "time_of_closest_approach_utc": "2026-08-31T12:36:52Z",
+    "t_minutes_from_now": 2955
+  },
+  {
+    "object_a": "STARLINK-1039",
+    "object_b": "STARLINK-1376",
+    "miss_distance_km": 42.156,
+    "relative_velocity_km_s": 11.745,
+    "time_of_closest_approach_utc": "2026-08-30T09:06:08Z",
+    "t_minutes_from_now": 1305
+  },
+  {
+    "object_a": "STARLINK-1209",
+    "object_b": "STARLINK-1308",
+    "miss_distance_km": 42.192,
+    "relative_velocity_km_s": 12.319,
+    "time_of_closest_approach_utc": "2026-09-01T00:06:32Z",
+    "t_minutes_from_now": 3645
+  },
+  {
+    "object_a": "STARLINK-1231",
+    "object_b": "STARLINK-1443",
+    "miss_distance_km": 43.032,
+    "relative_velocity_km_s": 4.661,
+    "time_of_closest_approach_utc": "2026-09-02T09:16:32Z",
+    "t_minutes_from_now": 5635
+  },
+  {
+    "object_a": "STARLINK-1080",
+    "object_b": "STARLINK-1364",
+    "miss_distance_km": 43.516,
+    "relative_velocity_km_s": 11.271,
+    "time_of_closest_approach_utc": "2026-08-31T09:06:14Z",
+    "t_minutes_from_now": 2745
+  },
+  {
+    "object_a": "STARLINK-1132",
+    "object_b": "STARLINK-1347",
+    "miss_distance_km": 44.135,
+    "relative_velocity_km_s": 10.607,
+    "time_of_closest_approach_utc": "2026-09-02T05:56:15Z",
+    "t_minutes_from_now": 5435
+  },
+  {
+    "object_a": "STARLINK-1273",
+    "object_b": "STARLINK-1277",
+    "miss_distance_km": 44.99,
+    "relative_velocity_km_s": 1.214,
+    "time_of_closest_approach_utc": "2026-09-01T11:06:39Z",
+    "t_minutes_from_now": 4305
+  },
+  {
+    "object_a": "STARLINK-1215",
+    "object_b": "STARLINK-1227",
+    "miss_distance_km": 45.14,
+    "relative_velocity_km_s": 1.073,
+    "time_of_closest_approach_utc": "2026-09-01T12:11:34Z",
+    "t_minutes_from_now": 4370
+  },
+  {
+    "object_a": "STARLINK-1017",
+    "object_b": "STARLINK-1300",
+    "miss_distance_km": 45.414,
+    "relative_velocity_km_s": 0.991,
+    "time_of_closest_approach_utc": "2026-08-29T18:26:06Z",
+    "t_minutes_from_now": 425
+  },
+  {
+    "object_a": "STARLINK-1047",
+    "object_b": "STARLINK-1460",
+    "miss_distance_km": 46.051,
+    "relative_velocity_km_s": 7.845,
+    "time_of_closest_approach_utc": "2026-08-30T14:36:10Z",
+    "t_minutes_from_now": 1635
+  },
+  {
+    "object_a": "STARLINK-1226",
+    "object_b": "STARLINK-1452",
+    "miss_distance_km": 46.563,
+    "relative_velocity_km_s": 0.204,
+    "time_of_closest_approach_utc": "2026-09-01T19:46:36Z",
+    "t_minutes_from_now": 4825
+  },
+  {
+    "object_a": "STARLINK-1191",
+    "object_b": "STARLINK-1446",
+    "miss_distance_km": 46.587,
+    "relative_velocity_km_s": 1.376,
+    "time_of_closest_approach_utc": "2026-08-31T01:46:33Z",
+    "t_minutes_from_now": 2305
+  },
+  {
+    "object_a": "STARLINK-1012",
+    "object_b": "STARLINK-1043",
+    "miss_distance_km": 46.944,
+    "relative_velocity_km_s": 0.521,
+    "time_of_closest_approach_utc": "2026-09-01T12:21:06Z",
+    "t_minutes_from_now": 4380
+  },
+  {
+    "object_a": "STARLINK-1350",
+    "object_b": "STARLINK-1443",
+    "miss_distance_km": 47.934,
+    "relative_velocity_km_s": 4.27,
+    "time_of_closest_approach_utc": "2026-08-30T18:56:53Z",
+    "t_minutes_from_now": 1895
+  },
+  {
+    "object_a": "STARLINK-1452",
+    "object_b": "STARLINK-1454",
+    "miss_distance_km": 47.936,
+    "relative_velocity_km_s": 2.037,
+    "time_of_closest_approach_utc": "2026-09-01T01:27:03Z",
+    "t_minutes_from_now": 3725
+  },
+  {
+    "object_a": "STARLINK-1063",
+    "object_b": "STARLINK-1271",
+    "miss_distance_km": 48.766,
+    "relative_velocity_km_s": 12.266,
+    "time_of_closest_approach_utc": "2026-08-30T03:06:11Z",
+    "t_minutes_from_now": 945
+  },
+  {
+    "object_a": "STARLINK-1283",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 48.833,
+    "relative_velocity_km_s": 0.2,
+    "time_of_closest_approach_utc": "2026-08-30T21:56:45Z",
+    "t_minutes_from_now": 2075
+  },
+  {
+    "object_a": "STARLINK-1048",
+    "object_b": "STARLINK-1272",
+    "miss_distance_km": 49.139,
+    "relative_velocity_km_s": 6.728,
+    "time_of_closest_approach_utc": "2026-09-01T22:41:10Z",
+    "t_minutes_from_now": 5000
+  },
+  {
+    "object_a": "STARLINK-1231",
+    "object_b": "STARLINK-1262",
+    "miss_distance_km": 49.685,
+    "relative_velocity_km_s": 11.602,
+    "time_of_closest_approach_utc": "2026-08-31T08:11:32Z",
+    "t_minutes_from_now": 2690
+  },
+  {
+    "object_a": "STARLINK-1020",
+    "object_b": "STARLINK-1274",
+    "miss_distance_km": 49.827,
+    "relative_velocity_km_s": 10.568,
+    "time_of_closest_approach_utc": "2026-09-01T20:21:07Z",
+    "t_minutes_from_now": 4860
+  },
+  {
+    "object_a": "STARLINK-1068",
+    "object_b": "STARLINK-1331",
+    "miss_distance_km": 49.86,
+    "relative_velocity_km_s": 9.362,
+    "time_of_closest_approach_utc": "2026-09-01T11:41:11Z",
+    "t_minutes_from_now": 4340
+  },
+  {
+    "object_a": "STARLINK-1042",
+    "object_b": "STARLINK-1131",
+    "miss_distance_km": 50.564,
+    "relative_velocity_km_s": 12.188,
+    "time_of_closest_approach_utc": "2026-08-30T04:26:08Z",
+    "t_minutes_from_now": 1025
+  },
+  {
+    "object_a": "STARLINK-1171",
+    "object_b": "STARLINK-1309",
+    "miss_distance_km": 50.822,
+    "relative_velocity_km_s": 10.621,
+    "time_of_closest_approach_utc": "2026-08-30T04:21:17Z",
+    "t_minutes_from_now": 1020
+  },
+  {
+    "object_a": "STARLINK-1154",
+    "object_b": "STARLINK-1331",
+    "miss_distance_km": 50.856,
+    "relative_velocity_km_s": 5.279,
+    "time_of_closest_approach_utc": "2026-08-31T19:31:31Z",
+    "t_minutes_from_now": 3370
+  },
+  {
+    "object_a": "STARLINK-1156",
+    "object_b": "STARLINK-1227",
+    "miss_distance_km": 50.857,
+    "relative_velocity_km_s": 6.773,
+    "time_of_closest_approach_utc": "2026-09-01T21:21:16Z",
+    "t_minutes_from_now": 4920
+  },
+  {
+    "object_a": "STARLINK-1094",
+    "object_b": "STARLINK-1446",
+    "miss_distance_km": 51.319,
+    "relative_velocity_km_s": 4.296,
+    "time_of_closest_approach_utc": "2026-08-30T11:01:13Z",
+    "t_minutes_from_now": 1420
+  },
+  {
+    "object_a": "STARLINK-1012",
+    "object_b": "STARLINK-1042",
+    "miss_distance_km": 52.08,
+    "relative_velocity_km_s": 9.031,
+    "time_of_closest_approach_utc": "2026-08-31T09:21:06Z",
+    "t_minutes_from_now": 2760
+  },
+  {
+    "object_a": "STARLINK-1272",
+    "object_b": "STARLINK-1361",
+    "miss_distance_km": 52.213,
+    "relative_velocity_km_s": 2.679,
+    "time_of_closest_approach_utc": "2026-09-02T04:36:44Z",
+    "t_minutes_from_now": 5355
+  },
+  {
+    "object_a": "STARLINK-1122",
+    "object_b": "STARLINK-1255",
+    "miss_distance_km": 52.381,
+    "relative_velocity_km_s": 10.776,
+    "time_of_closest_approach_utc": "2026-08-30T05:36:13Z",
+    "t_minutes_from_now": 1095
+  },
+  {
+    "object_a": "STARLINK-1046",
+    "object_b": "STARLINK-1286",
+    "miss_distance_km": 52.714,
+    "relative_velocity_km_s": 8.613,
+    "time_of_closest_approach_utc": "2026-08-31T21:01:09Z",
+    "t_minutes_from_now": 3460
+  },
+  {
+    "object_a": "STARLINK-1337",
+    "object_b": "STARLINK-1456",
+    "miss_distance_km": 52.875,
+    "relative_velocity_km_s": 0.404,
+    "time_of_closest_approach_utc": "2026-09-02T07:42:00Z",
+    "t_minutes_from_now": 5540
+  },
+  {
+    "object_a": "STARLINK-1202",
+    "object_b": "STARLINK-1392",
+    "miss_distance_km": 52.884,
+    "relative_velocity_km_s": 2.287,
+    "time_of_closest_approach_utc": "2026-09-02T09:36:26Z",
+    "t_minutes_from_now": 5655
+  },
+  {
+    "object_a": "STARLINK-1193",
+    "object_b": "STARLINK-1191",
+    "miss_distance_km": 53.331,
+    "relative_velocity_km_s": 12.23,
+    "time_of_closest_approach_utc": "2026-09-01T12:51:25Z",
+    "t_minutes_from_now": 4410
+  },
+  {
+    "object_a": "STARLINK-1278",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 54.059,
+    "relative_velocity_km_s": 2.382,
+    "time_of_closest_approach_utc": "2026-09-01T10:31:49Z",
+    "t_minutes_from_now": 4270
+  },
+  {
+    "object_a": "STARLINK-1068",
+    "object_b": "STARLINK-1327",
+    "miss_distance_km": 54.248,
+    "relative_velocity_km_s": 9.698,
+    "time_of_closest_approach_utc": "2026-09-01T15:26:11Z",
+    "t_minutes_from_now": 4565
+  },
+  {
+    "object_a": "STARLINK-1067",
+    "object_b": "STARLINK-1283",
+    "miss_distance_km": 54.61,
+    "relative_velocity_km_s": 8.579,
+    "time_of_closest_approach_utc": "2026-08-31T05:36:11Z",
+    "t_minutes_from_now": 2535
+  },
+  {
+    "object_a": "STARLINK-1231",
+    "object_b": "STARLINK-1271",
+    "miss_distance_km": 55.36,
+    "relative_velocity_km_s": 0.073,
+    "time_of_closest_approach_utc": "2026-09-02T11:21:32Z",
+    "t_minutes_from_now": 5760
+  },
+  {
+    "object_a": "STARLINK-1132",
+    "object_b": "STARLINK-1277",
+    "miss_distance_km": 55.447,
+    "relative_velocity_km_s": 10.263,
+    "time_of_closest_approach_utc": "2026-09-01T17:21:15Z",
+    "t_minutes_from_now": 4680
+  },
+  {
+    "object_a": "STARLINK-1080",
+    "object_b": "STARLINK-1090",
+    "miss_distance_km": 55.648,
+    "relative_velocity_km_s": 4.338,
+    "time_of_closest_approach_utc": "2026-09-01T10:01:14Z",
+    "t_minutes_from_now": 4240
+  },
+  {
+    "object_a": "STARLINK-1376",
+    "object_b": "STARLINK-1446",
+    "miss_distance_km": 55.887,
+    "relative_velocity_km_s": 8.869,
+    "time_of_closest_approach_utc": "2026-09-01T11:06:57Z",
+    "t_minutes_from_now": 4305
+  },
+  {
+    "object_a": "STARLINK-1453",
+    "object_b": "STARLINK-1394",
+    "miss_distance_km": 57.034,
+    "relative_velocity_km_s": 3.291,
+    "time_of_closest_approach_utc": "2026-08-30T05:37:04Z",
+    "t_minutes_from_now": 1095
+  },
+  {
+    "object_a": "STARLINK-1043",
+    "object_b": "STARLINK-1327",
+    "miss_distance_km": 57.425,
+    "relative_velocity_km_s": 11.433,
+    "time_of_closest_approach_utc": "2026-08-30T12:01:09Z",
+    "t_minutes_from_now": 1480
+  },
+  {
+    "object_a": "STARLINK-1230",
+    "object_b": "STARLINK-1191",
+    "miss_distance_km": 57.538,
+    "relative_velocity_km_s": 4.764,
+    "time_of_closest_approach_utc": "2026-08-31T21:06:28Z",
+    "t_minutes_from_now": 3465
+  },
+  {
+    "object_a": "STARLINK-1286",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 57.763,
+    "relative_velocity_km_s": 3.623,
+    "time_of_closest_approach_utc": "2026-09-01T19:41:51Z",
+    "t_minutes_from_now": 4820
+  },
+  {
+    "object_a": "STARLINK-1272",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 58.834,
+    "relative_velocity_km_s": 2.266,
+    "time_of_closest_approach_utc": "2026-09-02T03:51:44Z",
+    "t_minutes_from_now": 5310
+  },
+  {
+    "object_a": "STARLINK-1042",
+    "object_b": "STARLINK-1114",
+    "miss_distance_km": 59.158,
+    "relative_velocity_km_s": 11.541,
+    "time_of_closest_approach_utc": "2026-08-30T04:31:08Z",
+    "t_minutes_from_now": 1030
+  },
+  {
+    "object_a": "STARLINK-1039",
+    "object_b": "STARLINK-1133",
+    "miss_distance_km": 59.208,
+    "relative_velocity_km_s": 3.798,
+    "time_of_closest_approach_utc": "2026-08-31T08:06:08Z",
+    "t_minutes_from_now": 2685
+  },
+  {
+    "object_a": "STARLINK-1123",
+    "object_b": "STARLINK-1122",
+    "miss_distance_km": 59.448,
+    "relative_velocity_km_s": 2.321,
+    "time_of_closest_approach_utc": "2026-08-29T14:06:12Z",
+    "t_minutes_from_now": 165
+  },
+  {
+    "object_a": "STARLINK-1063",
+    "object_b": "STARLINK-1460",
+    "miss_distance_km": 59.478,
+    "relative_velocity_km_s": 11.524,
+    "time_of_closest_approach_utc": "2026-08-30T17:51:11Z",
+    "t_minutes_from_now": 1830
+  },
+  {
+    "object_a": "STARLINK-1231",
+    "object_b": "STARLINK-1350",
+    "miss_distance_km": 60.015,
+    "relative_velocity_km_s": 0.42,
+    "time_of_closest_approach_utc": "2026-09-01T13:41:32Z",
+    "t_minutes_from_now": 4460
+  },
+  {
+    "object_a": "STARLINK-1221",
+    "object_b": "STARLINK-1222",
+    "miss_distance_km": 60.354,
+    "relative_velocity_km_s": 6.096,
+    "time_of_closest_approach_utc": "2026-09-02T06:36:35Z",
+    "t_minutes_from_now": 5475
+  },
+  {
+    "object_a": "STARLINK-1152",
+    "object_b": "STARLINK-1193",
+    "miss_distance_km": 61.66,
+    "relative_velocity_km_s": 0.035,
+    "time_of_closest_approach_utc": "2026-09-01T01:36:23Z",
+    "t_minutes_from_now": 3735
+  },
+  {
+    "object_a": "STARLINK-1255",
+    "object_b": "STARLINK-1361",
+    "miss_distance_km": 61.67,
+    "relative_velocity_km_s": 2.904,
+    "time_of_closest_approach_utc": "2026-09-01T22:31:47Z",
+    "t_minutes_from_now": 4990
+  },
+  {
+    "object_a": "STARLINK-1273",
+    "object_b": "STARLINK-1265",
+    "miss_distance_km": 61.738,
+    "relative_velocity_km_s": 0.039,
+    "time_of_closest_approach_utc": "2026-08-29T21:31:39Z",
+    "t_minutes_from_now": 610
+  },
+  {
+    "object_a": "STARLINK-1267",
+    "object_b": "STARLINK-1309",
+    "miss_distance_km": 61.839,
+    "relative_velocity_km_s": 0.892,
+    "time_of_closest_approach_utc": "2026-09-02T10:06:44Z",
+    "t_minutes_from_now": 5685
+  },
+  {
+    "object_a": "STARLINK-1272",
+    "object_b": "STARLINK-1454",
+    "miss_distance_km": 61.858,
+    "relative_velocity_km_s": 5.411,
+    "time_of_closest_approach_utc": "2026-08-30T10:11:44Z",
+    "t_minutes_from_now": 1370
+  },
+  {
+    "object_a": "STARLINK-1277",
+    "object_b": "STARLINK-1297",
+    "miss_distance_km": 62.056,
+    "relative_velocity_km_s": 3.185,
+    "time_of_closest_approach_utc": "2026-08-31T02:21:40Z",
+    "t_minutes_from_now": 2340
+  },
+  {
+    "object_a": "STARLINK-1216",
+    "object_b": "STARLINK-1226",
+    "miss_distance_km": 62.113,
+    "relative_velocity_km_s": 5.178,
+    "time_of_closest_approach_utc": "2026-09-01T03:36:27Z",
+    "t_minutes_from_now": 3855
+  },
+  {
+    "object_a": "STARLINK-1094",
+    "object_b": "STARLINK-1152",
+    "miss_distance_km": 62.492,
+    "relative_velocity_km_s": 10.236,
+    "time_of_closest_approach_utc": "2026-08-30T06:11:13Z",
+    "t_minutes_from_now": 1130
+  },
+  {
+    "object_a": "STARLINK-1304",
+    "object_b": "STARLINK-1284",
+    "miss_distance_km": 62.561,
+    "relative_velocity_km_s": 2.87,
+    "time_of_closest_approach_utc": "2026-08-30T22:01:42Z",
+    "t_minutes_from_now": 2080
+  },
+  {
+    "object_a": "STARLINK-1012",
+    "object_b": "STARLINK-1300",
+    "miss_distance_km": 62.643,
+    "relative_velocity_km_s": 0.164,
+    "time_of_closest_approach_utc": "2026-08-29T14:31:06Z",
+    "t_minutes_from_now": 190
+  },
+  {
+    "object_a": "STARLINK-1274",
+    "object_b": "STARLINK-1371",
+    "miss_distance_km": 63.443,
+    "relative_velocity_km_s": 1.508,
+    "time_of_closest_approach_utc": "2026-08-31T02:26:45Z",
+    "t_minutes_from_now": 2345
+  },
+  {
+    "object_a": "STARLINK-1347",
+    "object_b": "STARLINK-1452",
+    "miss_distance_km": 63.543,
+    "relative_velocity_km_s": 0.467,
+    "time_of_closest_approach_utc": "2026-08-31T06:17:00Z",
+    "t_minutes_from_now": 2575
+  },
+  {
+    "object_a": "STARLINK-1327",
+    "object_b": "STARLINK-1452",
+    "miss_distance_km": 63.564,
+    "relative_velocity_km_s": 3.364,
+    "time_of_closest_approach_utc": "2026-09-01T18:16:55Z",
+    "t_minutes_from_now": 4735
+  },
+  {
+    "object_a": "STARLINK-1042",
+    "object_b": "STARLINK-1281",
+    "miss_distance_km": 63.713,
+    "relative_velocity_km_s": 9.186,
+    "time_of_closest_approach_utc": "2026-09-01T16:06:08Z",
+    "t_minutes_from_now": 4605
+  },
+  {
+    "object_a": "STARLINK-1283",
+    "object_b": "STARLINK-1308",
+    "miss_distance_km": 63.783,
+    "relative_velocity_km_s": 5.362,
+    "time_of_closest_approach_utc": "2026-09-01T06:31:45Z",
+    "t_minutes_from_now": 4030
+  },
+  {
+    "object_a": "COSMOS 1408 DEB",
+    "object_b": "STARLINK-1193",
+    "miss_distance_km": 64.681,
+    "relative_velocity_km_s": 8.857,
+    "time_of_closest_approach_utc": "2026-09-01T01:52:16Z",
+    "t_minutes_from_now": 3750
+  },
+  {
+    "object_a": "STARLINK-1273",
+    "object_b": "STARLINK-1296",
+    "miss_distance_km": 65.075,
+    "relative_velocity_km_s": 0.039,
+    "time_of_closest_approach_utc": "2026-08-31T22:41:39Z",
+    "t_minutes_from_now": 3560
+  },
+  {
+    "object_a": "STARLINK-1090",
+    "object_b": "STARLINK-1209",
+    "miss_distance_km": 66.014,
+    "relative_velocity_km_s": 0.042,
+    "time_of_closest_approach_utc": "2026-08-30T20:01:14Z",
+    "t_minutes_from_now": 1960
+  },
+  {
+    "object_a": "STARLINK-1036",
+    "object_b": "STARLINK-1048",
+    "miss_distance_km": 66.246,
+    "relative_velocity_km_s": 1.528,
+    "time_of_closest_approach_utc": "2026-08-30T20:36:07Z",
+    "t_minutes_from_now": 1995
+  },
+  {
+    "object_a": "STARLINK-1090",
+    "object_b": "STARLINK-1263",
+    "miss_distance_km": 66.312,
+    "relative_velocity_km_s": 12.11,
+    "time_of_closest_approach_utc": "2026-09-02T04:11:14Z",
+    "t_minutes_from_now": 5330
+  },
+  {
+    "object_a": "STARLINK-1153",
+    "object_b": "STARLINK-1215",
+    "miss_distance_km": 66.624,
+    "relative_velocity_km_s": 9.575,
+    "time_of_closest_approach_utc": "2026-09-02T01:16:21Z",
+    "t_minutes_from_now": 5155
+  },
+  {
+    "object_a": "STARLINK-1017",
+    "object_b": "STARLINK-1276",
+    "miss_distance_km": 66.751,
+    "relative_velocity_km_s": 1.765,
+    "time_of_closest_approach_utc": "2026-09-02T09:01:06Z",
+    "t_minutes_from_now": 5620
+  },
+  {
+    "object_a": "STARLINK-1042",
+    "object_b": "STARLINK-1443",
+    "miss_distance_km": 66.817,
+    "relative_velocity_km_s": 0.099,
+    "time_of_closest_approach_utc": "2026-08-29T14:16:08Z",
+    "t_minutes_from_now": 175
+  },
+  {
+    "object_a": "STARLINK-1222",
+    "object_b": "STARLINK-1284",
+    "miss_distance_km": 67.022,
+    "relative_velocity_km_s": 11.243,
+    "time_of_closest_approach_utc": "2026-08-29T15:26:35Z",
+    "t_minutes_from_now": 245
+  },
+  {
+    "object_a": "STARLINK-1134",
+    "object_b": "STARLINK-1216",
+    "miss_distance_km": 67.1,
+    "relative_velocity_km_s": 12.229,
+    "time_of_closest_approach_utc": "2026-08-29T17:01:15Z",
+    "t_minutes_from_now": 340
+  },
+  {
+    "object_a": "STARLINK-1302",
+    "object_b": "STARLINK-1373",
+    "miss_distance_km": 67.665,
+    "relative_velocity_km_s": 6.558,
+    "time_of_closest_approach_utc": "2026-08-31T06:56:41Z",
+    "t_minutes_from_now": 2615
+  },
+  {
+    "object_a": "STARLINK-1042",
+    "object_b": "STARLINK-1274",
+    "miss_distance_km": 67.917,
+    "relative_velocity_km_s": 0.276,
+    "time_of_closest_approach_utc": "2026-08-31T14:36:08Z",
+    "t_minutes_from_now": 3075
+  },
+  {
+    "object_a": "STARLINK-1191",
+    "object_b": "STARLINK-1215",
+    "miss_distance_km": 68.222,
+    "relative_velocity_km_s": 0.414,
+    "time_of_closest_approach_utc": "2026-08-30T00:16:33Z",
+    "t_minutes_from_now": 775
+  },
+  {
+    "object_a": "STARLINK-1225",
+    "object_b": "STARLINK-1362",
+    "miss_distance_km": 68.238,
+    "relative_velocity_km_s": 6.002,
+    "time_of_closest_approach_utc": "2026-09-01T03:06:27Z",
+    "t_minutes_from_now": 3825
+  },
+  {
+    "object_a": "STARLINK-1172",
+    "object_b": "STARLINK-1307",
+    "miss_distance_km": 69.06,
+    "relative_velocity_km_s": 11.908,
+    "time_of_closest_approach_utc": "2026-08-31T05:46:20Z",
+    "t_minutes_from_now": 2545
+  },
+  {
+    "object_a": "STARLINK-1168",
+    "object_b": "STARLINK-1296",
+    "miss_distance_km": 69.089,
+    "relative_velocity_km_s": 11.211,
+    "time_of_closest_approach_utc": "2026-09-01T03:46:19Z",
+    "t_minutes_from_now": 3865
+  },
+  {
+    "object_a": "STARLINK-1274",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 69.647,
+    "relative_velocity_km_s": 0.656,
+    "time_of_closest_approach_utc": "2026-08-30T17:21:45Z",
+    "t_minutes_from_now": 1800
+  },
+  {
+    "object_a": "STARLINK-1284",
+    "object_b": "STARLINK-1308",
+    "miss_distance_km": 70.363,
+    "relative_velocity_km_s": 2.807,
+    "time_of_closest_approach_utc": "2026-09-01T20:16:46Z",
+    "t_minutes_from_now": 4855
+  },
+  {
+    "object_a": "STARLINK-1212",
+    "object_b": "STARLINK-1453",
+    "miss_distance_km": 70.541,
+    "relative_velocity_km_s": 2.03,
+    "time_of_closest_approach_utc": "2026-09-01T00:31:34Z",
+    "t_minutes_from_now": 3670
+  },
+  {
+    "object_a": "STARLINK-1307",
+    "object_b": "STARLINK-1350",
+    "miss_distance_km": 70.654,
+    "relative_velocity_km_s": 7.433,
+    "time_of_closest_approach_utc": "2026-09-01T02:06:47Z",
+    "t_minutes_from_now": 3765
+  },
+  {
+    "object_a": "STARLINK-1327",
+    "object_b": "STARLINK-1331",
+    "miss_distance_km": 71.147,
+    "relative_velocity_km_s": 0.497,
+    "time_of_closest_approach_utc": "2026-09-01T00:56:55Z",
+    "t_minutes_from_now": 3695
+  },
+  {
+    "object_a": "STARLINK-1271",
+    "object_b": "STARLINK-1215",
+    "miss_distance_km": 71.559,
+    "relative_velocity_km_s": 2.73,
+    "time_of_closest_approach_utc": "2026-08-29T12:41:33Z",
+    "t_minutes_from_now": 80
+  },
+  {
+    "object_a": "STARLINK-1020",
+    "object_b": "STARLINK-1122",
+    "miss_distance_km": 71.886,
+    "relative_velocity_km_s": 10.476,
+    "time_of_closest_approach_utc": "2026-08-30T23:36:07Z",
+    "t_minutes_from_now": 2175
+  },
+  {
+    "object_a": "STARLINK-1046",
+    "object_b": "STARLINK-1304",
+    "miss_distance_km": 72.333,
+    "relative_velocity_km_s": 6.975,
+    "time_of_closest_approach_utc": "2026-08-31T14:56:09Z",
+    "t_minutes_from_now": 3095
+  },
+  {
+    "object_a": "STARLINK-1281",
+    "object_b": "STARLINK-1307",
+    "miss_distance_km": 72.711,
+    "relative_velocity_km_s": 6.436,
+    "time_of_closest_approach_utc": "2026-08-30T01:56:40Z",
+    "t_minutes_from_now": 875
+  },
+  {
+    "object_a": "STARLINK-1307",
+    "object_b": "STARLINK-1321",
+    "miss_distance_km": 72.922,
+    "relative_velocity_km_s": 8.088,
+    "time_of_closest_approach_utc": "2026-08-30T03:16:47Z",
+    "t_minutes_from_now": 955
+  },
+  {
+    "object_a": "STARLINK-1131",
+    "object_b": "STARLINK-1167",
+    "miss_distance_km": 73.048,
+    "relative_velocity_km_s": 0.817,
+    "time_of_closest_approach_utc": "2026-08-31T07:41:15Z",
+    "t_minutes_from_now": 2660
+  },
+  {
+    "object_a": "STARLINK-1046",
+    "object_b": "STARLINK-1171",
+    "miss_distance_km": 73.057,
+    "relative_velocity_km_s": 1.42,
+    "time_of_closest_approach_utc": "2026-09-01T02:31:09Z",
+    "t_minutes_from_now": 3790
+  },
+  {
+    "object_a": "STARLINK-1216",
+    "object_b": "STARLINK-1271",
+    "miss_distance_km": 73.422,
+    "relative_velocity_km_s": 1.516,
+    "time_of_closest_approach_utc": "2026-08-30T11:16:27Z",
+    "t_minutes_from_now": 1435
+  },
+  {
+    "object_a": "STARLINK-1131",
+    "object_b": "STARLINK-1153",
+    "miss_distance_km": 73.43,
+    "relative_velocity_km_s": 0.807,
+    "time_of_closest_approach_utc": "2026-09-01T19:41:15Z",
+    "t_minutes_from_now": 4820
+  },
+  {
+    "object_a": "STARLINK-1273",
+    "object_b": "STARLINK-1260",
+    "miss_distance_km": 73.441,
+    "relative_velocity_km_s": 0.07,
+    "time_of_closest_approach_utc": "2026-08-31T22:41:39Z",
+    "t_minutes_from_now": 3560
+  },
+  {
+    "object_a": "STARLINK-1202",
+    "object_b": "STARLINK-1276",
+    "miss_distance_km": 73.462,
+    "relative_velocity_km_s": 11.805,
+    "time_of_closest_approach_utc": "2026-08-30T02:31:26Z",
+    "t_minutes_from_now": 910
+  },
+  {
+    "object_a": "STARLINK-1361",
+    "object_b": "STARLINK-1452",
+    "miss_distance_km": 73.469,
+    "relative_velocity_km_s": 4.795,
+    "time_of_closest_approach_utc": "2026-08-29T17:41:57Z",
+    "t_minutes_from_now": 380
+  },
+  {
+    "object_a": "STARLINK-1193",
+    "object_b": "STARLINK-1307",
+    "miss_distance_km": 73.511,
+    "relative_velocity_km_s": 8.35,
+    "time_of_closest_approach_utc": "2026-09-01T21:31:25Z",
+    "t_minutes_from_now": 4930
+  },
+  {
+    "object_a": "STARLINK-1008",
+    "object_b": "STARLINK-1300",
+    "miss_distance_km": 73.562,
+    "relative_velocity_km_s": 0.194,
+    "time_of_closest_approach_utc": "2026-08-30T03:41:05Z",
+    "t_minutes_from_now": 980
+  },
+  {
+    "object_a": "STARLINK-1319",
+    "object_b": "STARLINK-1371",
+    "miss_distance_km": 73.6,
+    "relative_velocity_km_s": 2.197,
+    "time_of_closest_approach_utc": "2026-08-29T12:26:43Z",
+    "t_minutes_from_now": 65
+  },
+  {
+    "object_a": "STARLINK-1020",
+    "object_b": "STARLINK-1185",
+    "miss_distance_km": 73.95,
+    "relative_velocity_km_s": 4.737,
+    "time_of_closest_approach_utc": "2026-08-29T19:56:07Z",
+    "t_minutes_from_now": 515
+  },
+  {
+    "object_a": "STARLINK-1266",
+    "object_b": "STARLINK-1307",
+    "miss_distance_km": 74.338,
+    "relative_velocity_km_s": 0.451,
+    "time_of_closest_approach_utc": "2026-08-29T20:26:43Z",
+    "t_minutes_from_now": 545
+  },
+  {
+    "object_a": "STARLINK-1152",
+    "object_b": "STARLINK-1263",
+    "miss_distance_km": 74.534,
+    "relative_velocity_km_s": 5.935,
+    "time_of_closest_approach_utc": "2026-08-30T02:51:23Z",
+    "t_minutes_from_now": 930
+  },
+  {
+    "object_a": "STARLINK-1230",
+    "object_b": "STARLINK-1231",
+    "miss_distance_km": 74.61,
+    "relative_velocity_km_s": 1.789,
+    "time_of_closest_approach_utc": "2026-08-31T04:01:28Z",
+    "t_minutes_from_now": 2440
+  },
+  {
+    "object_a": "STARLINK-1305",
+    "object_b": "STARLINK-1266",
+    "miss_distance_km": 74.885,
+    "relative_velocity_km_s": 1.251,
+    "time_of_closest_approach_utc": "2026-08-31T02:56:42Z",
+    "t_minutes_from_now": 2375
+  },
+  {
+    "object_a": "STARLINK-1329",
+    "object_b": "STARLINK-1458",
+    "miss_distance_km": 75.254,
+    "relative_velocity_km_s": 0.619,
+    "time_of_closest_approach_utc": "2026-09-01T09:56:52Z",
+    "t_minutes_from_now": 4235
+  },
+  {
+    "object_a": "STARLINK-1020",
+    "object_b": "STARLINK-1193",
+    "miss_distance_km": 75.293,
+    "relative_velocity_km_s": 0.402,
+    "time_of_closest_approach_utc": "2026-08-29T22:11:07Z",
+    "t_minutes_from_now": 650
+  },
+  {
+    "object_a": "STARLINK-1221",
+    "object_b": "STARLINK-1262",
+    "miss_distance_km": 75.319,
+    "relative_velocity_km_s": 8.576,
+    "time_of_closest_approach_utc": "2026-09-01T12:36:35Z",
+    "t_minutes_from_now": 4395
+  },
+  {
+    "object_a": "STARLINK-1338",
+    "object_b": "STARLINK-1321",
+    "miss_distance_km": 75.691,
+    "relative_velocity_km_s": 2.178,
+    "time_of_closest_approach_utc": "2026-08-31T18:41:52Z",
+    "t_minutes_from_now": 3320
+  },
+  {
+    "object_a": "STARLINK-1225",
+    "object_b": "STARLINK-1368",
+    "miss_distance_km": 75.889,
+    "relative_velocity_km_s": 6.035,
+    "time_of_closest_approach_utc": "2026-09-01T05:26:27Z",
+    "t_minutes_from_now": 3965
+  },
+  {
+    "object_a": "STARLINK-1272",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 76.276,
+    "relative_velocity_km_s": 0.175,
+    "time_of_closest_approach_utc": "2026-08-29T13:06:44Z",
+    "t_minutes_from_now": 105
+  },
+  {
+    "object_a": "STARLINK-1114",
+    "object_b": "STARLINK-1090",
+    "miss_distance_km": 76.475,
+    "relative_velocity_km_s": 0.258,
+    "time_of_closest_approach_utc": "2026-08-30T02:46:12Z",
+    "t_minutes_from_now": 925
+  },
+  {
+    "object_a": "STARLINK-1154",
+    "object_b": "STARLINK-1227",
+    "miss_distance_km": 76.755,
+    "relative_velocity_km_s": 1.336,
+    "time_of_closest_approach_utc": "2026-09-01T21:26:31Z",
+    "t_minutes_from_now": 4925
+  },
+  {
+    "object_a": "STARLINK-1272",
+    "object_b": "STARLINK-1255",
+    "miss_distance_km": 77.246,
+    "relative_velocity_km_s": 0.245,
+    "time_of_closest_approach_utc": "2026-09-02T03:06:44Z",
+    "t_minutes_from_now": 5265
+  },
+  {
+    "object_a": "STARLINK-1012",
+    "object_b": "STARLINK-1132",
+    "miss_distance_km": 77.854,
+    "relative_velocity_km_s": 6.51,
+    "time_of_closest_approach_utc": "2026-08-29T21:31:06Z",
+    "t_minutes_from_now": 610
+  },
+  {
+    "object_a": "STARLINK-1273",
+    "object_b": "STARLINK-1274",
+    "miss_distance_km": 78.196,
+    "relative_velocity_km_s": 6.114,
+    "time_of_closest_approach_utc": "2026-09-01T22:31:39Z",
+    "t_minutes_from_now": 4990
+  },
+  {
+    "object_a": "STARLINK-1222",
+    "object_b": "STARLINK-1333",
+    "miss_distance_km": 78.353,
+    "relative_velocity_km_s": 10.726,
+    "time_of_closest_approach_utc": "2026-08-30T03:41:35Z",
+    "t_minutes_from_now": 980
+  },
+  {
+    "object_a": "STARLINK-1273",
+    "object_b": "STARLINK-1316",
+    "miss_distance_km": 78.4,
+    "relative_velocity_km_s": 0.037,
+    "time_of_closest_approach_utc": "2026-08-30T22:51:39Z",
+    "t_minutes_from_now": 2130
+  },
+  {
+    "object_a": "STARLINK-1114",
+    "object_b": "STARLINK-1456",
+    "miss_distance_km": 78.731,
+    "relative_velocity_km_s": 7.742,
+    "time_of_closest_approach_utc": "2026-08-31T13:01:12Z",
+    "t_minutes_from_now": 2980
+  },
+  {
+    "object_a": "STARLINK-1063",
+    "object_b": "STARLINK-1094",
+    "miss_distance_km": 78.826,
+    "relative_velocity_km_s": 9.069,
+    "time_of_closest_approach_utc": "2026-09-02T07:46:11Z",
+    "t_minutes_from_now": 5545
+  },
+  {
+    "object_a": "STARLINK-1266",
+    "object_b": "STARLINK-1309",
+    "miss_distance_km": 79.187,
+    "relative_velocity_km_s": 2.102,
+    "time_of_closest_approach_utc": "2026-08-30T22:21:43Z",
+    "t_minutes_from_now": 2100
+  },
+  {
+    "object_a": "STARLINK-1068",
+    "object_b": "STARLINK-1273",
+    "miss_distance_km": 79.342,
+    "relative_velocity_km_s": 0.051,
+    "time_of_closest_approach_utc": "2026-09-01T08:41:11Z",
+    "t_minutes_from_now": 4160
+  },
+  {
+    "object_a": "STARLINK-1131",
+    "object_b": "STARLINK-1263",
+    "miss_distance_km": 79.369,
+    "relative_velocity_km_s": 11.268,
+    "time_of_closest_approach_utc": "2026-09-01T14:06:15Z",
+    "t_minutes_from_now": 4485
+  },
+  {
+    "object_a": "STARLINK-1262",
+    "object_b": "STARLINK-1300",
+    "miss_distance_km": 79.378,
+    "relative_velocity_km_s": 0.173,
+    "time_of_closest_approach_utc": "2026-09-02T11:01:38Z",
+    "t_minutes_from_now": 5740
+  },
+  {
+    "object_a": "STARLINK-1133",
+    "object_b": "STARLINK-1376",
+    "miss_distance_km": 79.461,
+    "relative_velocity_km_s": 12.245,
+    "time_of_closest_approach_utc": "2026-08-31T01:31:18Z",
+    "t_minutes_from_now": 2290
+  },
+  {
+    "object_a": "STARLINK-1156",
+    "object_b": "STARLINK-1226",
+    "miss_distance_km": 79.823,
+    "relative_velocity_km_s": 6.761,
+    "time_of_closest_approach_utc": "2026-09-01T00:21:16Z",
+    "t_minutes_from_now": 3660
+  },
+  {
+    "object_a": "STARLINK-1080",
+    "object_b": "STARLINK-1152",
+    "miss_distance_km": 79.963,
+    "relative_velocity_km_s": 6.423,
+    "time_of_closest_approach_utc": "2026-08-30T13:01:14Z",
+    "t_minutes_from_now": 1540
+  },
+  {
+    "object_a": "STARLINK-1017",
+    "object_b": "STARLINK-1221",
+    "miss_distance_km": 79.975,
+    "relative_velocity_km_s": 7.947,
+    "time_of_closest_approach_utc": "2026-08-31T08:46:06Z",
+    "t_minutes_from_now": 2725
+  },
+  {
+    "object_a": "STARLINK-1043",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 80.469,
+    "relative_velocity_km_s": 9.305,
+    "time_of_closest_approach_utc": "2026-08-31T11:46:09Z",
+    "t_minutes_from_now": 2905
+  },
+  {
+    "object_a": "STARLINK-1373",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 80.6,
+    "relative_velocity_km_s": 0.648,
+    "time_of_closest_approach_utc": "2026-08-31T06:06:55Z",
+    "t_minutes_from_now": 2565
+  },
+  {
+    "object_a": "STARLINK-1319",
+    "object_b": "STARLINK-1272",
+    "miss_distance_km": 80.879,
+    "relative_velocity_km_s": 1.193,
+    "time_of_closest_approach_utc": "2026-08-29T22:11:43Z",
+    "t_minutes_from_now": 650
+  },
+  {
+    "object_a": "STARLINK-1184",
+    "object_b": "STARLINK-1263",
+    "miss_distance_km": 80.993,
+    "relative_velocity_km_s": 11.473,
+    "time_of_closest_approach_utc": "2026-08-31T04:41:24Z",
+    "t_minutes_from_now": 2480
+  },
+  {
+    "object_a": "STARLINK-1222",
+    "object_b": "STARLINK-1266",
+    "miss_distance_km": 80.997,
+    "relative_velocity_km_s": 11.639,
+    "time_of_closest_approach_utc": "2026-08-30T16:01:35Z",
+    "t_minutes_from_now": 1720
+  },
+  {
+    "object_a": "STARLINK-1297",
+    "object_b": "STARLINK-1453",
+    "miss_distance_km": 81.39,
+    "relative_velocity_km_s": 10.562,
+    "time_of_closest_approach_utc": "2026-08-30T23:06:46Z",
+    "t_minutes_from_now": 2145
+  },
+  {
+    "object_a": "STARLINK-1017",
+    "object_b": "STARLINK-1350",
+    "miss_distance_km": 81.744,
+    "relative_velocity_km_s": 11.729,
+    "time_of_closest_approach_utc": "2026-08-31T09:56:06Z",
+    "t_minutes_from_now": 2795
+  },
+  {
+    "object_a": "STARLINK-1131",
+    "object_b": "STARLINK-1154",
+    "miss_distance_km": 81.774,
+    "relative_velocity_km_s": 7.305,
+    "time_of_closest_approach_utc": "2026-09-01T14:26:15Z",
+    "t_minutes_from_now": 4505
+  },
+  {
+    "object_a": "STARLINK-1154",
+    "object_b": "STARLINK-1347",
+    "miss_distance_km": 82.172,
+    "relative_velocity_km_s": 1.067,
+    "time_of_closest_approach_utc": "2026-08-29T17:51:31Z",
+    "t_minutes_from_now": 390
+  },
+  {
+    "object_a": "STARLINK-1166",
+    "object_b": "STARLINK-1297",
+    "miss_distance_km": 82.414,
+    "relative_velocity_km_s": 12.028,
+    "time_of_closest_approach_utc": "2026-09-01T01:16:16Z",
+    "t_minutes_from_now": 3715
+  },
+  {
+    "object_a": "STARLINK-1278",
+    "object_b": "STARLINK-1338",
+    "miss_distance_km": 82.679,
+    "relative_velocity_km_s": 4.469,
+    "time_of_closest_approach_utc": "2026-08-30T10:11:49Z",
+    "t_minutes_from_now": 1370
+  },
+  {
+    "object_a": "STARLINK-1347",
+    "object_b": "STARLINK-1446",
+    "miss_distance_km": 82.763,
+    "relative_velocity_km_s": 0.462,
+    "time_of_closest_approach_utc": "2026-09-01T21:02:00Z",
+    "t_minutes_from_now": 4900
+  },
+  {
+    "object_a": "STARLINK-1094",
+    "object_b": "STARLINK-1266",
+    "miss_distance_km": 82.781,
+    "relative_velocity_km_s": 12.071,
+    "time_of_closest_approach_utc": "2026-08-31T11:01:13Z",
+    "t_minutes_from_now": 2860
+  },
+  {
+    "object_a": "STARLINK-1166",
+    "object_b": "STARLINK-1452",
+    "miss_distance_km": 83.082,
+    "relative_velocity_km_s": 10.163,
+    "time_of_closest_approach_utc": "2026-08-29T12:06:16Z",
+    "t_minutes_from_now": 45
+  },
+  {
+    "object_a": "STARLINK-1043",
+    "object_b": "STARLINK-1046",
+    "miss_distance_km": 83.228,
+    "relative_velocity_km_s": 2.651,
+    "time_of_closest_approach_utc": "2026-08-31T11:11:09Z",
+    "t_minutes_from_now": 2870
+  },
+  {
+    "object_a": "STARLINK-1094",
+    "object_b": "STARLINK-1167",
+    "miss_distance_km": 83.397,
+    "relative_velocity_km_s": 4.648,
+    "time_of_closest_approach_utc": "2026-09-02T07:51:13Z",
+    "t_minutes_from_now": 5550
+  },
+  {
+    "object_a": "STARLINK-1226",
+    "object_b": "STARLINK-1347",
+    "miss_distance_km": 83.93,
+    "relative_velocity_km_s": 0.27,
+    "time_of_closest_approach_utc": "2026-09-01T05:06:36Z",
+    "t_minutes_from_now": 3945
+  },
+  {
+    "object_a": "STARLINK-1156",
+    "object_b": "STARLINK-1185",
+    "miss_distance_km": 84.058,
+    "relative_velocity_km_s": 5.351,
+    "time_of_closest_approach_utc": "2026-09-02T11:11:16Z",
+    "t_minutes_from_now": 5750
+  },
+  {
+    "object_a": "STARLINK-1043",
+    "object_b": "STARLINK-1131",
+    "miss_distance_km": 84.212,
+    "relative_velocity_km_s": 9.734,
+    "time_of_closest_approach_utc": "2026-08-30T23:06:09Z",
+    "t_minutes_from_now": 2145
+  },
+  {
+    "object_a": "STARLINK-1043",
+    "object_b": "STARLINK-1394",
+    "miss_distance_km": 84.248,
+    "relative_velocity_km_s": 12.138,
+    "time_of_closest_approach_utc": "2026-08-31T21:31:09Z",
+    "t_minutes_from_now": 3490
+  },
+  {
+    "object_a": "STARLINK-1286",
+    "object_b": "STARLINK-1364",
+    "miss_distance_km": 84.802,
+    "relative_velocity_km_s": 7.264,
+    "time_of_closest_approach_utc": "2026-09-01T06:41:51Z",
+    "t_minutes_from_now": 4040
+  },
+  {
+    "object_a": "STARLINK-1036",
+    "object_b": "STARLINK-1222",
+    "miss_distance_km": 85.355,
+    "relative_velocity_km_s": 12.291,
+    "time_of_closest_approach_utc": "2026-08-31T11:21:07Z",
+    "t_minutes_from_now": 2880
+  },
+  {
+    "object_a": "STARLINK-1226",
+    "object_b": "STARLINK-1373",
+    "miss_distance_km": 85.498,
+    "relative_velocity_km_s": 5.94,
+    "time_of_closest_approach_utc": "2026-08-31T06:46:36Z",
+    "t_minutes_from_now": 2605
+  },
+  {
+    "object_a": "STARLINK-1284",
+    "object_b": "STARLINK-1394",
+    "miss_distance_km": 86.024,
+    "relative_velocity_km_s": 8.663,
+    "time_of_closest_approach_utc": "2026-09-01T04:11:46Z",
+    "t_minutes_from_now": 3890
+  },
+  {
+    "object_a": "STARLINK-1114",
+    "object_b": "STARLINK-1319",
+    "miss_distance_km": 86.141,
+    "relative_velocity_km_s": 11.745,
+    "time_of_closest_approach_utc": "2026-08-30T17:26:12Z",
+    "t_minutes_from_now": 1805
+  },
+  {
+    "object_a": "STARLINK-1307",
+    "object_b": "STARLINK-1357",
+    "miss_distance_km": 86.224,
+    "relative_velocity_km_s": 9.989,
+    "time_of_closest_approach_utc": "2026-08-29T18:46:47Z",
+    "t_minutes_from_now": 445
+  },
+  {
+    "object_a": "STARLINK-1371",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 86.416,
+    "relative_velocity_km_s": 0.852,
+    "time_of_closest_approach_utc": "2026-08-30T12:46:54Z",
+    "t_minutes_from_now": 1525
+  },
+  {
+    "object_a": "STARLINK-1329",
+    "object_b": "STARLINK-1361",
+    "miss_distance_km": 86.464,
+    "relative_velocity_km_s": 0.557,
+    "time_of_closest_approach_utc": "2026-08-29T23:51:52Z",
+    "t_minutes_from_now": 750
+  },
+  {
+    "object_a": "STARLINK-1372",
+    "object_b": "STARLINK-1451",
+    "miss_distance_km": 86.944,
+    "relative_velocity_km_s": 0.826,
+    "time_of_closest_approach_utc": "2026-09-02T00:06:55Z",
+    "t_minutes_from_now": 5085
+  },
+  {
+    "object_a": "STARLINK-1171",
+    "object_b": "STARLINK-1307",
+    "miss_distance_km": 87.008,
+    "relative_velocity_km_s": 9.062,
+    "time_of_closest_approach_utc": "2026-08-30T10:26:17Z",
+    "t_minutes_from_now": 1385
+  },
+  {
+    "object_a": "STARLINK-1271",
+    "object_b": "STARLINK-1446",
+    "miss_distance_km": 87.551,
+    "relative_velocity_km_s": 4.436,
+    "time_of_closest_approach_utc": "2026-08-29T22:46:33Z",
+    "t_minutes_from_now": 685
+  },
+  {
+    "object_a": "STARLINK-1067",
+    "object_b": "STARLINK-1309",
+    "miss_distance_km": 88.586,
+    "relative_velocity_km_s": 7.272,
+    "time_of_closest_approach_utc": "2026-08-29T19:11:11Z",
+    "t_minutes_from_now": 470
+  },
+  {
+    "object_a": "STARLINK-1286",
+    "object_b": "STARLINK-1357",
+    "miss_distance_km": 88.602,
+    "relative_velocity_km_s": 9.525,
+    "time_of_closest_approach_utc": "2026-09-02T03:11:51Z",
+    "t_minutes_from_now": 5270
+  },
+  {
+    "object_a": "STARLINK-1172",
+    "object_b": "STARLINK-1255",
+    "miss_distance_km": 88.608,
+    "relative_velocity_km_s": 12.232,
+    "time_of_closest_approach_utc": "2026-08-31T17:16:20Z",
+    "t_minutes_from_now": 3235
+  },
+  {
+    "object_a": "STARLINK-1094",
+    "object_b": "STARLINK-1364",
+    "miss_distance_km": 88.686,
+    "relative_velocity_km_s": 8.083,
+    "time_of_closest_approach_utc": "2026-08-31T00:06:13Z",
+    "t_minutes_from_now": 2205
+  },
+  {
+    "object_a": "STARLINK-1008",
+    "object_b": "STARLINK-1262",
+    "miss_distance_km": 88.721,
+    "relative_velocity_km_s": 0.348,
+    "time_of_closest_approach_utc": "2026-08-30T10:41:05Z",
+    "t_minutes_from_now": 1400
+  },
+  {
+    "object_a": "STARLINK-1131",
+    "object_b": "STARLINK-1185",
+    "miss_distance_km": 88.792,
+    "relative_velocity_km_s": 3.515,
+    "time_of_closest_approach_utc": "2026-09-01T05:06:15Z",
+    "t_minutes_from_now": 3945
+  },
+  {
+    "object_a": "STARLINK-1199",
+    "object_b": "STARLINK-1296",
+    "miss_distance_km": 89.056,
+    "relative_velocity_km_s": 9.476,
+    "time_of_closest_approach_utc": "2026-08-30T18:01:31Z",
+    "t_minutes_from_now": 1840
+  },
+  {
+    "object_a": "STARLINK-1267",
+    "object_b": "STARLINK-1286",
+    "miss_distance_km": 89.199,
+    "relative_velocity_km_s": 0.885,
+    "time_of_closest_approach_utc": "2026-09-01T15:56:44Z",
+    "t_minutes_from_now": 4595
+  },
+  {
+    "object_a": "STARLINK-1357",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 89.882,
+    "relative_velocity_km_s": 6.799,
+    "time_of_closest_approach_utc": "2026-09-01T18:01:56Z",
+    "t_minutes_from_now": 4720
+  },
+  {
+    "object_a": "STARLINK-1216",
+    "object_b": "STARLINK-1460",
+    "miss_distance_km": 89.955,
+    "relative_velocity_km_s": 2.821,
+    "time_of_closest_approach_utc": "2026-08-30T04:21:27Z",
+    "t_minutes_from_now": 1020
+  },
+  {
+    "object_a": "STARLINK-1304",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 90.145,
+    "relative_velocity_km_s": 5.593,
+    "time_of_closest_approach_utc": "2026-08-30T04:26:42Z",
+    "t_minutes_from_now": 1025
+  },
+  {
+    "object_a": "STARLINK-1216",
+    "object_b": "STARLINK-1458",
+    "miss_distance_km": 90.609,
+    "relative_velocity_km_s": 1.407,
+    "time_of_closest_approach_utc": "2026-08-30T20:36:27Z",
+    "t_minutes_from_now": 1995
+  },
+  {
+    "object_a": "STARLINK-1231",
+    "object_b": "STARLINK-1376",
+    "miss_distance_km": 91.039,
+    "relative_velocity_km_s": 5.275,
+    "time_of_closest_approach_utc": "2026-08-31T12:41:32Z",
+    "t_minutes_from_now": 2960
+  },
+  {
+    "object_a": "STARLINK-1274",
+    "object_b": "STARLINK-1284",
+    "miss_distance_km": 91.042,
+    "relative_velocity_km_s": 2.244,
+    "time_of_closest_approach_utc": "2026-09-02T10:36:45Z",
+    "t_minutes_from_now": 5715
+  },
+  {
+    "object_a": "STARLINK-1225",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 91.469,
+    "relative_velocity_km_s": 0.077,
+    "time_of_closest_approach_utc": "2026-08-29T18:21:27Z",
+    "t_minutes_from_now": 420
+  },
+  {
+    "object_a": "STARLINK-1063",
+    "object_b": "STARLINK-1454",
+    "miss_distance_km": 91.511,
+    "relative_velocity_km_s": 12.197,
+    "time_of_closest_approach_utc": "2026-08-29T22:26:11Z",
+    "t_minutes_from_now": 665
+  },
+  {
+    "object_a": "STARLINK-1302",
+    "object_b": "STARLINK-1255",
+    "miss_distance_km": 91.765,
+    "relative_velocity_km_s": 4.903,
+    "time_of_closest_approach_utc": "2026-08-29T18:26:41Z",
+    "t_minutes_from_now": 425
+  },
+  {
+    "object_a": "STARLINK-1042",
+    "object_b": "STARLINK-1392",
+    "miss_distance_km": 91.934,
+    "relative_velocity_km_s": 0.756,
+    "time_of_closest_approach_utc": "2026-09-02T07:21:08Z",
+    "t_minutes_from_now": 5520
+  },
+  {
+    "object_a": "STARLINK-1225",
+    "object_b": "STARLINK-1365",
+    "miss_distance_km": 91.953,
+    "relative_velocity_km_s": 2.154,
+    "time_of_closest_approach_utc": "2026-08-31T16:56:27Z",
+    "t_minutes_from_now": 3215
+  },
+  {
+    "object_a": "STARLINK-1184",
+    "object_b": "STARLINK-1376",
+    "miss_distance_km": 92.286,
+    "relative_velocity_km_s": 12.1,
+    "time_of_closest_approach_utc": "2026-09-02T07:51:24Z",
+    "t_minutes_from_now": 5550
+  },
+  {
+    "object_a": "STARLINK-1309",
+    "object_b": "STARLINK-1286",
+    "miss_distance_km": 92.396,
+    "relative_velocity_km_s": 1.779,
+    "time_of_closest_approach_utc": "2026-09-01T23:31:50Z",
+    "t_minutes_from_now": 5050
+  },
+  {
+    "object_a": "STARLINK-1048",
+    "object_b": "STARLINK-1307",
+    "miss_distance_km": 92.755,
+    "relative_velocity_km_s": 2.69,
+    "time_of_closest_approach_utc": "2026-08-31T23:56:10Z",
+    "t_minutes_from_now": 3635
+  },
+  {
+    "object_a": "STARLINK-1216",
+    "object_b": "STARLINK-1231",
+    "miss_distance_km": 92.825,
+    "relative_velocity_km_s": 1.596,
+    "time_of_closest_approach_utc": "2026-09-01T23:51:27Z",
+    "t_minutes_from_now": 5070
+  },
+  {
+    "object_a": "STARLINK-1114",
+    "object_b": "STARLINK-1134",
+    "miss_distance_km": 92.927,
+    "relative_velocity_km_s": 7.894,
+    "time_of_closest_approach_utc": "2026-08-29T23:36:12Z",
+    "t_minutes_from_now": 735
+  },
+  {
+    "object_a": "STARLINK-1269",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 92.966,
+    "relative_velocity_km_s": 0.059,
+    "time_of_closest_approach_utc": "2026-09-01T09:56:30Z",
+    "t_minutes_from_now": 4235
+  },
+  {
+    "object_a": "STARLINK-1191",
+    "object_b": "STARLINK-1357",
+    "miss_distance_km": 93.047,
+    "relative_velocity_km_s": 0.116,
+    "time_of_closest_approach_utc": "2026-08-30T21:46:33Z",
+    "t_minutes_from_now": 2065
+  },
+  {
+    "object_a": "STARLINK-1043",
+    "object_b": "STARLINK-1216",
+    "miss_distance_km": 93.247,
+    "relative_velocity_km_s": 10.665,
+    "time_of_closest_approach_utc": "2026-08-29T23:51:09Z",
+    "t_minutes_from_now": 750
+  },
+  {
+    "object_a": "STARLINK-1226",
+    "object_b": "STARLINK-1327",
+    "miss_distance_km": 93.279,
+    "relative_velocity_km_s": 3.548,
+    "time_of_closest_approach_utc": "2026-09-01T19:01:36Z",
+    "t_minutes_from_now": 4780
+  },
+  {
+    "object_a": "STARLINK-1167",
+    "object_b": "STARLINK-1304",
+    "miss_distance_km": 93.341,
+    "relative_velocity_km_s": 11.576,
+    "time_of_closest_approach_utc": "2026-08-31T10:31:19Z",
+    "t_minutes_from_now": 2830
+  },
+  {
+    "object_a": "STARLINK-1216",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 93.64,
+    "relative_velocity_km_s": 0.187,
+    "time_of_closest_approach_utc": "2026-08-31T13:41:27Z",
+    "t_minutes_from_now": 3020
+  },
+  {
+    "object_a": "STARLINK-1230",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 93.74,
+    "relative_velocity_km_s": 0.054,
+    "time_of_closest_approach_utc": "2026-09-01T05:16:28Z",
+    "t_minutes_from_now": 3955
+  },
+  {
+    "object_a": "STARLINK-1185",
+    "object_b": "STARLINK-1225",
+    "miss_distance_km": 93.82,
+    "relative_velocity_km_s": 12.215,
+    "time_of_closest_approach_utc": "2026-08-30T11:46:22Z",
+    "t_minutes_from_now": 1465
+  },
+  {
+    "object_a": "STARLINK-1202",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 93.849,
+    "relative_velocity_km_s": 0.055,
+    "time_of_closest_approach_utc": "2026-08-30T22:01:26Z",
+    "t_minutes_from_now": 2080
+  },
+  {
+    "object_a": "STARLINK-1271",
+    "object_b": "STARLINK-1458",
+    "miss_distance_km": 93.939,
+    "relative_velocity_km_s": 0.131,
+    "time_of_closest_approach_utc": "2026-08-30T19:51:33Z",
+    "t_minutes_from_now": 1950
+  },
+  {
+    "object_a": "STARLINK-1230",
+    "object_b": "STARLINK-1376",
+    "miss_distance_km": 94.079,
+    "relative_velocity_km_s": 3.606,
+    "time_of_closest_approach_utc": "2026-09-01T05:46:28Z",
+    "t_minutes_from_now": 3985
+  },
+  {
+    "object_a": "STARLINK-1227",
+    "object_b": "STARLINK-1452",
+    "miss_distance_km": 94.105,
+    "relative_velocity_km_s": 0.212,
+    "time_of_closest_approach_utc": "2026-09-01T05:11:36Z",
+    "t_minutes_from_now": 3950
+  },
+  {
+    "object_a": "STARLINK-1297",
+    "object_b": "STARLINK-1337",
+    "miss_distance_km": 94.756,
+    "relative_velocity_km_s": 7.441,
+    "time_of_closest_approach_utc": "2026-09-01T09:11:46Z",
+    "t_minutes_from_now": 4190
+  },
+  {
+    "object_a": "STARLINK-1191",
+    "object_b": "STARLINK-1394",
+    "miss_distance_km": 94.797,
+    "relative_velocity_km_s": 0.396,
+    "time_of_closest_approach_utc": "2026-08-30T00:21:33Z",
+    "t_minutes_from_now": 780
+  },
+  {
+    "object_a": "STARLINK-1222",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 94.83,
+    "relative_velocity_km_s": 8.266,
+    "time_of_closest_approach_utc": "2026-09-01T21:36:35Z",
+    "t_minutes_from_now": 4935
+  },
+  {
+    "object_a": "STARLINK-1448",
+    "object_b": "STARLINK-1458",
+    "miss_distance_km": 94.833,
+    "relative_velocity_km_s": 1.917,
+    "time_of_closest_approach_utc": "2026-08-31T15:37:02Z",
+    "t_minutes_from_now": 3135
+  },
+  {
+    "object_a": "STARLINK-1048",
+    "object_b": "STARLINK-1123",
+    "miss_distance_km": 94.95,
+    "relative_velocity_km_s": 12.202,
+    "time_of_closest_approach_utc": "2026-08-30T21:01:10Z",
+    "t_minutes_from_now": 2020
+  },
+  {
+    "object_a": "STARLINK-1042",
+    "object_b": "STARLINK-1154",
+    "miss_distance_km": 95.048,
+    "relative_velocity_km_s": 8.883,
+    "time_of_closest_approach_utc": "2026-08-30T06:56:08Z",
+    "t_minutes_from_now": 1175
+  },
+  {
+    "object_a": "STARLINK-1199",
+    "object_b": "STARLINK-1458",
+    "miss_distance_km": 95.124,
+    "relative_velocity_km_s": 0.142,
+    "time_of_closest_approach_utc": "2026-08-30T01:36:31Z",
+    "t_minutes_from_now": 855
+  },
+  {
+    "object_a": "STARLINK-1225",
+    "object_b": "STARLINK-1372",
+    "miss_distance_km": 95.304,
+    "relative_velocity_km_s": 5.953,
+    "time_of_closest_approach_utc": "2026-08-31T22:26:27Z",
+    "t_minutes_from_now": 3545
+  },
+  {
+    "object_a": "STARLINK-1222",
+    "object_b": "STARLINK-1226",
+    "miss_distance_km": 95.344,
+    "relative_velocity_km_s": 3.472,
+    "time_of_closest_approach_utc": "2026-08-29T12:11:35Z",
+    "t_minutes_from_now": 50
+  },
+  {
+    "object_a": "STARLINK-1269",
+    "object_b": "STARLINK-1221",
+    "miss_distance_km": 95.429,
+    "relative_velocity_km_s": 11.656,
+    "time_of_closest_approach_utc": "2026-08-31T13:01:30Z",
+    "t_minutes_from_now": 2980
+  },
+  {
+    "object_a": "STARLINK-1331",
+    "object_b": "STARLINK-1452",
+    "miss_distance_km": 95.605,
+    "relative_velocity_km_s": 3.844,
+    "time_of_closest_approach_utc": "2026-09-02T03:26:58Z",
+    "t_minutes_from_now": 5285
+  },
+  {
+    "object_a": "STARLINK-1122",
+    "object_b": "STARLINK-1193",
+    "miss_distance_km": 95.763,
+    "relative_velocity_km_s": 10.266,
+    "time_of_closest_approach_utc": "2026-08-30T03:41:13Z",
+    "t_minutes_from_now": 980
+  },
+  {
+    "object_a": "STARLINK-1331",
+    "object_b": "STARLINK-1337",
+    "miss_distance_km": 95.781,
+    "relative_velocity_km_s": 1.766,
+    "time_of_closest_approach_utc": "2026-08-31T15:46:58Z",
+    "t_minutes_from_now": 3145
+  },
+  {
+    "object_a": "STARLINK-1039",
+    "object_b": "STARLINK-1216",
+    "miss_distance_km": 95.859,
+    "relative_velocity_km_s": 12.225,
+    "time_of_closest_approach_utc": "2026-09-01T19:36:08Z",
+    "t_minutes_from_now": 4815
+  },
+  {
+    "object_a": "STARLINK-1122",
+    "object_b": "STARLINK-1270",
+    "miss_distance_km": 96.107,
+    "relative_velocity_km_s": 0.976,
+    "time_of_closest_approach_utc": "2026-08-30T01:36:13Z",
+    "t_minutes_from_now": 855
+  },
+  {
+    "object_a": "STARLINK-1012",
+    "object_b": "STARLINK-1185",
+    "miss_distance_km": 96.211,
+    "relative_velocity_km_s": 6.726,
+    "time_of_closest_approach_utc": "2026-08-30T12:06:06Z",
+    "t_minutes_from_now": 1485
+  },
+  {
+    "object_a": "STARLINK-1080",
+    "object_b": "STARLINK-1392",
+    "miss_distance_km": 96.218,
+    "relative_velocity_km_s": 12.254,
+    "time_of_closest_approach_utc": "2026-09-02T01:31:14Z",
+    "t_minutes_from_now": 5170
+  },
+  {
+    "object_a": "STARLINK-1167",
+    "object_b": "STARLINK-1265",
+    "miss_distance_km": 96.47,
+    "relative_velocity_km_s": 11.076,
+    "time_of_closest_approach_utc": "2026-09-02T06:01:19Z",
+    "t_minutes_from_now": 5440
+  },
+  {
+    "object_a": "STARLINK-1443",
+    "object_b": "STARLINK-1446",
+    "miss_distance_km": 96.478,
+    "relative_velocity_km_s": 8.391,
+    "time_of_closest_approach_utc": "2026-08-31T01:07:02Z",
+    "t_minutes_from_now": 2265
+  },
+  {
+    "object_a": "STARLINK-1226",
+    "object_b": "STARLINK-1456",
+    "miss_distance_km": 96.574,
+    "relative_velocity_km_s": 1.93,
+    "time_of_closest_approach_utc": "2026-09-01T02:01:36Z",
+    "t_minutes_from_now": 3760
+  },
+  {
+    "object_a": "STARLINK-1152",
+    "object_b": "STARLINK-1274",
+    "miss_distance_km": 96.604,
+    "relative_velocity_km_s": 10.713,
+    "time_of_closest_approach_utc": "2026-09-02T10:46:23Z",
+    "t_minutes_from_now": 5725
+  },
+  {
+    "object_a": "STARLINK-1048",
+    "object_b": "STARLINK-1191",
+    "miss_distance_km": 96.641,
+    "relative_velocity_km_s": 11.273,
+    "time_of_closest_approach_utc": "2026-09-01T14:11:10Z",
+    "t_minutes_from_now": 4490
+  },
+  {
+    "object_a": "STARLINK-1221",
+    "object_b": "STARLINK-1373",
+    "miss_distance_km": 97.103,
+    "relative_velocity_km_s": 11.874,
+    "time_of_closest_approach_utc": "2026-09-01T07:36:35Z",
+    "t_minutes_from_now": 4095
+  },
+  {
+    "object_a": "STARLINK-1246",
+    "object_b": "STARLINK-1356",
+    "miss_distance_km": 97.225,
+    "relative_velocity_km_s": 0.055,
+    "time_of_closest_approach_utc": "2026-09-01T16:56:36Z",
+    "t_minutes_from_now": 4655
+  },
+  {
+    "object_a": "STARLINK-1307",
+    "object_b": "STARLINK-1263",
+    "miss_distance_km": 97.405,
+    "relative_velocity_km_s": 2.863,
+    "time_of_closest_approach_utc": "2026-08-29T20:31:47Z",
+    "t_minutes_from_now": 550
+  },
+  {
+    "object_a": "STARLINK-1262",
+    "object_b": "STARLINK-1376",
+    "miss_distance_km": 97.78,
+    "relative_velocity_km_s": 8.826,
+    "time_of_closest_approach_utc": "2026-08-30T10:31:38Z",
+    "t_minutes_from_now": 1390
+  },
+  {
+    "object_a": "STARLINK-1304",
+    "object_b": "STARLINK-1394",
+    "miss_distance_km": 97.834,
+    "relative_velocity_km_s": 10.456,
+    "time_of_closest_approach_utc": "2026-08-29T19:56:42Z",
+    "t_minutes_from_now": 515
+  },
+  {
+    "object_a": "STARLINK-1039",
+    "object_b": "STARLINK-1350",
+    "miss_distance_km": 97.961,
+    "relative_velocity_km_s": 12.122,
+    "time_of_closest_approach_utc": "2026-09-01T16:26:08Z",
+    "t_minutes_from_now": 4625
+  },
+  {
+    "object_a": "STARLINK-1042",
+    "object_b": "STARLINK-1335",
+    "miss_distance_km": 98.001,
+    "relative_velocity_km_s": 0.526,
+    "time_of_closest_approach_utc": "2026-09-02T11:11:08Z",
+    "t_minutes_from_now": 5750
+  },
+  {
+    "object_a": "STARLINK-1184",
+    "object_b": "STARLINK-1392",
+    "miss_distance_km": 98.174,
+    "relative_velocity_km_s": 11.842,
+    "time_of_closest_approach_utc": "2026-08-31T12:21:24Z",
+    "t_minutes_from_now": 2940
+  },
+  {
+    "object_a": "STARLINK-1222",
+    "object_b": "STARLINK-1270",
+    "miss_distance_km": 98.395,
+    "relative_velocity_km_s": 0.574,
+    "time_of_closest_approach_utc": "2026-08-31T18:36:35Z",
+    "t_minutes_from_now": 3315
+  },
+  {
+    "object_a": "STARLINK-1131",
+    "object_b": "STARLINK-1225",
+    "miss_distance_km": 98.513,
+    "relative_velocity_km_s": 11.416,
+    "time_of_closest_approach_utc": "2026-08-30T20:26:15Z",
+    "t_minutes_from_now": 1985
+  },
+  {
+    "object_a": "STARLINK-1215",
+    "object_b": "STARLINK-1394",
+    "miss_distance_km": 98.738,
+    "relative_velocity_km_s": 0.062,
+    "time_of_closest_approach_utc": "2026-08-30T00:16:34Z",
+    "t_minutes_from_now": 775
+  },
+  {
+    "object_a": "STARLINK-1043",
+    "object_b": "STARLINK-1284",
+    "miss_distance_km": 98.891,
+    "relative_velocity_km_s": 7.171,
+    "time_of_closest_approach_utc": "2026-08-30T23:36:09Z",
+    "t_minutes_from_now": 2175
+  },
+  {
+    "object_a": "STARLINK-1048",
+    "object_b": "STARLINK-1260",
+    "miss_distance_km": 98.981,
+    "relative_velocity_km_s": 0.134,
+    "time_of_closest_approach_utc": "2026-08-31T01:06:10Z",
+    "t_minutes_from_now": 2265
+  },
+  {
+    "object_a": "STARLINK-1265",
+    "object_b": "STARLINK-1308",
+    "miss_distance_km": 99.047,
+    "relative_velocity_km_s": 1.317,
+    "time_of_closest_approach_utc": "2026-08-30T16:31:49Z",
+    "t_minutes_from_now": 1750
+  }
+]

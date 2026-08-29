@@ -1,0 +1,22 @@
+{
+  "severity": "medium",
+  "rationale": "The miss distance of 14.774 km is within the tens of kilometers range, which, according to conjunction_assessment_basics.txt, should be monitored and re-assessed as tracking data updates. However, the relative velocity of 9.535 km/s is considered high, especially in the context of low Earth orbit, as noted in relative_velocity_and_severity.txt. This high relative velocity increases the chance of an actual intersection given tracking uncertainty and the severity of a collision if one occurs. Therefore, the combination of a moderate miss distance and a high relative velocity warrants a medium severity call.",
+  "guidance_used": [
+    "conjunction_assessment_basics.txt",
+    "relative_velocity_and_severity.txt"
+  ],
+  "recommended_urgency": "plan_maneuver_review",
+  "event": {
+    "object_a": "STARLINK-1199",
+    "object_b": "STARLINK-1260",
+    "miss_distance_km": 14.774,
+    "relative_velocity_km_s": 9.535,
+    "time_of_closest_approach_utc": "2026-08-30T11:01:31Z",
+    "t_minutes_from_now": 1420
+  },
+  "retrieved_sources": [
+    "relative_velocity_and_severity.txt",
+    "conjunction_assessment_basics.txt",
+    "maneuver_decision_criteria.txt"
+  ]
+}

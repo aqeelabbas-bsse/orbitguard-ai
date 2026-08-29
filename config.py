@@ -16,10 +16,10 @@ TLE_GROUPS = [
 
 # Limit how many objects per group we propagate (keeps compute + API load sane
 # for a 5-day prototype — raise this later if you have time to spare)
-MAX_OBJECTS_PER_GROUP = 40
+MAX_OBJECTS_PER_GROUP = 120
 
 # Propagation window
-PROPAGATION_HOURS = 48
+PROPAGATION_HOURS = 96
 STEP_MINUTES = 5
 
 # Output paths

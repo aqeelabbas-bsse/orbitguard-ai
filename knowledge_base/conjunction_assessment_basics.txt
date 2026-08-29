@@ -1,0 +1,23 @@
+Conjunction Assessment Basics
+
+A conjunction event occurs when two tracked objects in orbit are predicted to
+pass close to each other. Two numbers matter most when judging how serious an
+event is: miss distance (how close the objects come at their nearest point)
+and relative velocity (how fast they are moving with respect to each other
+at that point).
+
+Miss distance alone is not a complete risk picture. A close pass at low
+relative velocity is generally less urgent than the same distance at high
+relative velocity, because higher relative velocity both increases the
+chance of an actual intersection given tracking uncertainty and increases the
+severity of a collision if one occurs, since impact energy scales with the
+square of relative velocity.
+
+As a general rule of thumb for screening purposes: passes under a few
+kilometers deserve close review, passes in the tens of kilometers range
+should be monitored and re-assessed as tracking data updates, and passes
+beyond that are typically treated as low concern unless the object involved
+is unusually large or the relative velocity is unusually high. These are
+general operational heuristics, not fixed physical thresholds — actual risk
+depends on the specific objects, their size, and the quality of the tracking
+data available.

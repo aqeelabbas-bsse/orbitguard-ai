@@ -1,0 +1,26 @@
+Maneuver Decision Criteria
+
+Deciding whether to perform an avoidance maneuver is a tradeoff, not a purely
+automatic reaction to any flagged conjunction. Operators generally weigh:
+
+1. Collision risk level — driven by miss distance, relative velocity, and
+   the sizes of both objects, since tracking uncertainty means a "predicted"
+   miss distance carries a margin of error that shrinks as the event gets
+   closer in time and tracking data updates.
+2. Consequence if wrong — a collision with a large object is far more
+   costly than one with a small fragment, both in immediate mission impact
+   and in long-term debris generation.
+3. Cost of the maneuver itself — every maneuver spends fuel (delta-v),
+   which is a finite, non-renewable resource for most missions, and may
+   also disrupt planned mission activities or scheduling.
+4. Time to closest approach — more lead time allows for cheaper, smaller
+   corrective maneuvers and more opportunity to re-assess as tracking
+   improves; last-minute decisions typically require larger, costlier burns.
+
+A reasonable general decision pattern: low-severity events are monitored and
+re-assessed as new tracking data arrives rather than acted on immediately;
+medium-severity events warrant a maneuver review, weighing the fuel cost
+against the risk reduction achieved; high-severity events (very close
+approach, high relative velocity, or a large object involved) generally
+warrant proceeding with a maneuver unless the fuel cost is prohibitively high
+relative to remaining mission life.
