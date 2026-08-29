@@ -1,0 +1,24 @@
+Debris Mitigation Principles
+
+International space debris mitigation practice, broadly reflected in
+guidelines from bodies such as the UN Committee on the Peaceful Uses of Outer
+Space and major space agencies, centers on a few core ideas: minimize the
+creation of new debris during normal operations, avoid intentional
+break-ups, limit the probability of accidental collisions during a mission's
+operational life, and where possible plan for controlled deorbit or disposal
+at end of life so objects do not linger as long-term collision risks.
+
+For an operator monitoring a fleet, the practical implication is that
+avoiding a collision is not just about protecting one's own spacecraft — a
+collision generates a debris field that raises risk for every other object
+sharing that orbital region for years afterward. This is why even a
+moderate-probability event involving a large object (an active satellite or
+a substantial debris fragment) is often treated more seriously than a
+higher-probability event involving a very small fragment, since the
+consequence of a large-object collision is disproportionately worse for the
+broader orbital environment.
+
+This context matters for maneuver decisions: a small avoidance burn that
+costs some fuel is almost always preferable to accepting elevated collision
+risk, given how costly debris-generating collisions are to the entire
+orbital environment, not just the two objects involved.

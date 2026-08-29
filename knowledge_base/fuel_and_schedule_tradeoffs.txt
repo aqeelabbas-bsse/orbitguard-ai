@@ -1,0 +1,25 @@
+Fuel and Schedule Tradeoffs in Maneuver Planning
+
+Every avoidance maneuver spends propellant, and for most spacecraft that
+propellant budget is fixed for the life of the mission — there is no
+refueling once it runs low. This makes fuel a genuine scarce resource that
+has to be weighed against collision risk on every decision, not treated as
+free insurance.
+
+A useful way to frame the tradeoff: the "cost" of a maneuver is not just the
+immediate delta-v spent, it is that delta-v's share of the total remaining
+budget, since spending fuel now on a marginal-risk event reduces the
+spacecraft's ability to respond to a more severe event later in its mission
+life or to perform planned end-of-life disposal maneuvers.
+
+Schedule impact matters too. A maneuver can shift a spacecraft's ground
+track, delay planned observations or communications windows, or require
+follow-up trim maneuvers to return to the nominal mission orbit — all of
+which have operational cost beyond the fuel itself.
+
+In general, the smallest maneuver that achieves an adequate risk reduction is
+preferable to a larger one, both because it conserves fuel and because
+smaller burns are typically easier to plan accurately with less schedule
+disruption. Choosing between maneuver options should weigh risk reduction
+achieved per unit of fuel spent, not simply which option produces the
+largest final miss distance.

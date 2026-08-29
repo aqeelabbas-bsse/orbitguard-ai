@@ -1,0 +1,25 @@
+Relative Velocity and Collision Severity
+
+Relative velocity between two objects at closest approach affects risk in two
+separate ways, and it is worth treating them separately when assessing an
+event.
+
+First, it affects how much tracking uncertainty matters. Objects are tracked
+with some position uncertainty that grows the further out the prediction is
+made. At high relative velocity, a small timing error translates into a
+larger positional shift at the predicted closest-approach point, which
+widens the effective uncertainty around the predicted miss distance itself.
+
+Second, it affects consequence. Impact energy in a collision scales with the
+square of relative velocity, so a collision at high relative velocity is
+dramatically more destructive, and more likely to generate a large debris
+field, than one at low relative velocity — even at the same combined mass.
+
+In low Earth orbit, relative velocities between objects in similar orbital
+planes are often modest, but objects in different orbital planes or opposing
+directions (for example, an object in a near-polar orbit crossing a
+near-equatorial one) can have very high relative velocities even though both
+objects individually move at typical orbital speeds. This is why relative
+velocity should always be assessed alongside miss distance, not as an
+afterthought — a moderate miss distance at very high relative velocity can
+warrant more urgency than a smaller miss distance at low relative velocity.

@@ -1,0 +1,22 @@
+{
+  "severity": "low",
+  "rationale": "The miss distance of 2.895 km is relatively close, but the relative velocity of 0.058 km/s is low. According to the guidance in relative_velocity_and_severity.txt and conjunction_assessment_basics.txt, a low relative velocity reduces the risk of collision and the severity of a potential impact. Given these factors, the event is considered low severity. As stated in conjunction_assessment_basics.txt, passes under a few kilometers deserve close review, but the low relative velocity in this case suggests a lower level of urgency.",
+  "guidance_used": [
+    "relative_velocity_and_severity.txt",
+    "conjunction_assessment_basics.txt"
+  ],
+  "recommended_urgency": "monitor",
+  "event": {
+    "object_a": "STARLINK-1362",
+    "object_b": "STARLINK-1372",
+    "miss_distance_km": 2.895,
+    "relative_velocity_km_s": 0.058,
+    "time_of_closest_approach_utc": "2026-08-31T07:46:53Z",
+    "t_minutes_from_now": 2665
+  },
+  "retrieved_sources": [
+    "relative_velocity_and_severity.txt",
+    "conjunction_assessment_basics.txt",
+    "maneuver_decision_criteria.txt"
+  ]
+}
