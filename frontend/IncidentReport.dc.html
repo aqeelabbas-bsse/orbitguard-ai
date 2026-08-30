@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&amp;family=Inter:wght@400;500&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; }
+a { text-decoration:none; }
+@keyframes panelIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+@keyframes sweep { from { background-position:-100% 0,0 0; } to { background-position:200% 0,0 0; } }
+@keyframes panelSweep { from { background-position:-120% -120%,0 0; } to { background-position:220% 220%,0 0; } }
+</style>
+</helmet>
+<div style="min-height:100vh;position:relative;font-family:'Inter',sans-serif;color:{{ theme.textPrimary }};transition:color .35s ease">
+  <div style="position:fixed;inset:0;opacity:{{ nightOpacity }};transition:opacity .4s ease;pointer-events:none;z-index:0">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 20%, #0B0F1A 0%, #05070D 65%)"></div>
+    <div style="position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 6% 15%, rgba(255,255,255,0.8), transparent 60%),radial-gradient(1px 1px at 15% 45%, rgba(255,255,255,0.45), transparent 60%),radial-gradient(1px 1px at 24% 8%, rgba(255,255,255,0.6), transparent 60%),radial-gradient(1.5px 1.5px at 33% 72%, rgba(255,255,255,0.5), transparent 60%),radial-gradient(1px 1px at 41% 30%, rgba(255,255,255,0.35), transparent 60%),radial-gradient(2px 2px at 52% 60%, rgba(255,255,255,0.7), transparent 60%),radial-gradient(1px 1px at 61% 12%, rgba(255,255,255,0.45), transparent 60%),radial-gradient(1.5px 1.5px at 68% 85%, rgba(255,255,255,0.6), transparent 60%),radial-gradient(1px 1px at 77% 40%, rgba(255,255,255,0.3), transparent 60%),radial-gradient(1.5px 1.5px at 85% 65%, rgba(255,255,255,0.9), transparent 60%),radial-gradient(1px 1px at 91% 20%, rgba(255,255,255,0.5), transparent 60%),radial-gradient(1px 1px at 12% 90%, rgba(255,255,255,0.4), transparent 60%),radial-gradient(1px 1px at 46% 88%, rgba(255,255,255,0.55), transparent 60%),radial-gradient(1px 1px at 58% 35%, rgba(255,255,255,0.3), transparent 60%),radial-gradient(1px 1px at 72% 5%, rgba(255,255,255,0.65), transparent 60%),radial-gradient(1.5px 1.5px at 95% 92%, rgba(255,255,255,0.4), transparent 60%),radial-gradient(1px 1px at 3% 55%, rgba(255,255,255,0.5), transparent 60%),radial-gradient(1px 1px at 37% 4%, rgba(255,255,255,0.4), transparent 60%);background-size:300px 300px"></div>
+  </div>
+  <div style="position:fixed;inset:0;opacity:{{ dayOpacity }};transition:opacity .4s ease;pointer-events:none;z-index:0">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, #DCE9F5 0%, #F4F1EA 100%)"></div>
+    <div style="position:absolute;top:-160px;right:-160px;width:680px;height:680px;background:conic-gradient(from 205deg, rgba(255,248,225,0.2) 0deg, transparent 6deg, transparent 26deg, rgba(255,248,225,0.16) 32deg, transparent 38deg, transparent 58deg, rgba(255,248,225,0.16) 64deg, transparent 70deg, transparent 90deg, rgba(255,248,225,0.16) 96deg, transparent 102deg),radial-gradient(circle at 50% 50%, rgba(255,251,235,0.95) 0%, rgba(255,251,235,0.32) 35%, rgba(255,251,235,0) 62%)"></div>
+  </div>
+
+  <dc-import name="TopNav" active="dashboard" crumb="Incident Report" hint-size="100%,60px"></dc-import>
+
+  <div style="position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:116px 32px 100px;display:flex;gap:32px;align-items:flex-start">
+    <div style="flex:none;width:210px;position:sticky;top:100px;display:flex;flex-direction:column;gap:22px">
+      <a href="EventDetail.dc.html?event={{ event.id }}" style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:500;color:{{ theme.textSecondary }}" style-hover="color:{{ theme.accent }}">&larr; Back to Event</a>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:{{ theme.textSecondary }};letter-spacing:0.08em;text-transform:uppercase">Generated</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:{{ theme.textPrimary }};margin-top:5px">{{ event.generatedAt }}</div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:{{ theme.textSecondary }};letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px">Pipeline</div>
+        <div style="display:flex;flex-direction:column">
+          <sc-for list="{{ stages }}" as="stage" hint-placeholder-count="5">
+            <div style="display:flex;gap:10px;min-height:38px">
+              <div style="display:flex;flex-direction:column;align-items:center;flex:none">
+                <span style="width:8px;height:8px;border-radius:50%;background:{{ theme.accent }};box-shadow:0 0 6px {{ theme.accent }};flex:none"></span>
+                <sc-if value="{{ stage.hasNext }}" hint-placeholder-val="{{ true }}">
+                  <span style="width:1.5px;flex:1;background:{{ theme.accentBorder }};margin-top:3px"></span>
+                </sc-if>
+              </div>
+              <div style="padding-bottom:14px">
+                <div style="font-family:'Space Grotesk',sans-serif;font-size:12.5px;font-weight:600;color:{{ theme.textPrimary }}">{{ stage.label }}</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:{{ theme.textSecondary }};margin-top:2px">{{ stage.file }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div style="flex:1;min-width:0;border-radius:22px;background:linear-gradient(115deg, transparent 40%, {{ theme.sweepHighlight }} 50%, transparent 60%), {{ theme.glassBg }};background-size:280% 280%,100% 100%;background-position:-120% -120%,0 0;backdrop-filter:blur(24px) saturate(140%);-webkit-backdrop-filter:blur(24px) saturate(140%);border:1px solid {{ theme.glassBorder }};box-shadow:inset 0 1px 0 {{ theme.glassHighlight }}, {{ theme.glassShadow }};padding:40px 44px;display:flex;flex-direction:column;gap:26px;animation:panelIn .5s cubic-bezier(0.32,0.72,0,1) backwards;transition:background-color .35s ease,border-color .35s ease" style-hover="animation:panelSweep 1.1s ease">
+      <div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:600;color:{{ theme.textPrimary }}">Collision Avoidance Incident Report</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:{{ theme.textSecondary }};margin-top:10px;line-height:1.7">
+          Objects involved: <span style="color:{{ theme.textPrimary }}">{{ event.objectA }} and {{ event.objectB }}</span><br></br>
+          Time of closest approach (UTC): <span style="color:{{ theme.textPrimary }}">{{ event.tcaUtc }}</span>
+        </div>
+      </div>
+      <div style="height:1px;background:{{ theme.hairline }}"></div>
+
+      <div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.1em;color:{{ theme.textSecondary }};text-transform:uppercase;margin-bottom:10px">Flagged Event Summary</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:{{ theme.textPrimary }};line-height:1.8">
+          &bull; Miss distance (SGP4 screening, Phase 2): {{ event.missDistanceText }} km<br></br>
+          &bull; Relative velocity: {{ event.relVelText }} km/s
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.1em;color:{{ theme.textSecondary }};text-transform:uppercase">Risk Assessment</div>
+          <dc-import name="StatusPill" variant="{{ event.severityVariant }}" label="{{ event.severityLabel }}" theme="{{ themeName }}" hint-size="90px,26px"></dc-import>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:{{ theme.textSecondary }};margin-bottom:8px">Recommended urgency: <span style="color:{{ theme.textPrimary }}">{{ event.urgencyLabel }}</span></div>
+        <p style="margin:0;font-family:'Inter',sans-serif;font-size:14.5px;line-height:1.7;color:{{ theme.textPrimary }}">{{ event.rationale }}</p>
+      </div>
+
+      <div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.1em;color:{{ theme.textSecondary }};text-transform:uppercase;margin-bottom:10px">Maneuver Options Considered</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:{{ theme.textSecondary }};margin-bottom:14px">No-maneuver baseline miss distance (two-body simulation, Phase 3): <span style="color:{{ theme.textPrimary }}">{{ event.baselineText }} km</span></div>
+        <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:12.5px">
+          <thead>
+            <tr style="border-bottom:1px solid {{ theme.tableHeadBorder }}">
+              <th style="text-align:left;padding:8px 10px;color:{{ theme.textSecondary }};font-weight:500">Option</th>
+              <th style="text-align:right;padding:8px 10px;color:{{ theme.textSecondary }};font-weight:500">New Miss Dist.</th>
+              <th style="text-align:right;padding:8px 10px;color:{{ theme.textSecondary }};font-weight:500">Risk Reduction</th>
+              <th style="text-align:right;padding:8px 10px;color:{{ theme.textSecondary }};font-weight:500">Delta-v</th>
+              <th style="text-align:right;padding:8px 10px;color:{{ theme.textSecondary }};font-weight:500">Schedule</th>
+              <th style="text-align:right;padding:8px 10px;color:{{ theme.textSecondary }};font-weight:500">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <sc-for list="{{ event.tableRows }}" as="row" hint-placeholder-count="2">
+              <tr style="border-bottom:1px solid {{ theme.hairline }}">
+                <td style="padding:9px 10px;color:{{ theme.textPrimary }};font-weight:500">{{ row.name }}</td>
+                <td style="text-align:right;padding:9px 10px;color:{{ theme.textPrimary }};font-variant-numeric:tabular-nums">{{ row.missDist }} km</td>
+                <td style="text-align:right;padding:9px 10px;color:{{ row.riskColor }};font-variant-numeric:tabular-nums">{{ row.risk }}</td>
+                <td style="text-align:right;padding:9px 10px;color:{{ theme.textPrimary }};font-variant-numeric:tabular-nums">{{ row.deltaV }} m/s</td>
+                <td style="text-align:right;padding:9px 10px;color:{{ theme.textPrimary }};font-variant-numeric:tabular-nums">{{ row.schedule }}</td>
+                <td style="text-align:right;padding:9px 10px;color:{{ row.scoreColor }};font-variant-numeric:tabular-nums">{{ row.score }}</td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="border-radius:16px;background:{{ theme.verdictBg }};border:1px solid {{ theme.accentBorder }};padding:22px 24px">
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.1em;color:{{ theme.accent }};text-transform:uppercase;margin-bottom:12px">Final Recommendation</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:10px">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;color:{{ theme.textPrimary }}">{{ event.actionLabel }}</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;color:{{ event.confidenceColor }};text-transform:uppercase">{{ event.confidenceLabel }} confidence</div>
+        </div>
+        <p style="margin:0;font-family:'Inter',sans-serif;font-size:14px;line-height:1.7;color:{{ theme.textPrimary }}">{{ event.justification }}</p>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:{{ theme.textSecondary }};margin-top:14px;font-style:italic">Guidance referenced: {{ event.decisionSourcesText }}</div>
+      </div>
+
+      <div style="display:flex;justify-content:flex-end;margin-top:4px">
+        <button onClick="{{ downloadReport }}" style="position:relative;display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;background:linear-gradient(100deg, transparent 35%, rgba(255,255,255,0.14) 50%, transparent 65%), {{ theme.accentBg }};background-size:260% 100%,100% 100%;background-position:-100% 0,0 0;border:1px solid {{ theme.accentBorder }};color:{{ theme.accent }};font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:transform .2s cubic-bezier(0.32,0.72,0,1),border-color .2s" style-hover="animation:sweep .8s ease;transform:translateY(-1px)">Export as Markdown &darr;</button>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const THEMES = {
+  night: { glassBg: "rgba(230,240,255,0.08)", glassBorder: "rgba(255,255,255,0.14)", glassHighlight: "rgba(255,255,255,0.25)", glassShadow: "0 8px 32px rgba(0,0,0,0.45)", sweepHighlight: "rgba(255,255,255,0.10)", accent: "#4FD8FF", accentBg: "rgba(79,216,255,0.14)", accentBorder: "rgba(79,216,255,0.4)", textPrimary: "#E9EEF7", textSecondary: "#8B93A7", hairline: "rgba(255,255,255,0.08)", tableHeadBorder: "rgba(255,255,255,0.16)", verdictBg: "rgba(79,216,255,0.06)" },
+  day: { glassBg: "rgba(255,255,255,0.55)", glassBorder: "rgba(0,0,0,0.09)", glassHighlight: "rgba(255,255,255,0.8)", glassShadow: "0 8px 28px rgba(31,45,70,0.14)", sweepHighlight: "rgba(255,255,255,0.55)", accent: "#1B7FB8", accentBg: "rgba(27,127,184,0.12)", accentBorder: "rgba(27,127,184,0.4)", textPrimary: "#1A2130", textSecondary: "#5C6478", hairline: "rgba(0,0,0,0.08)", tableHeadBorder: "rgba(0,0,0,0.16)", verdictBg: "rgba(27,127,184,0.08)" },
+};
+const THEME_KEY = "orbitguard-theme";
+const THEME_EVENT = "orbitguard-theme-change";
+
+class Component extends DCLogic {
+  state = { theme: (typeof localStorage !== "undefined" && localStorage.getItem(THEME_KEY)) || "night" };
+
+  componentDidMount() {
+    const id = new URLSearchParams(window.location.search).get("event") || "5";
+    this._eventId = parseInt(id, 10);
+    import("./data.js").then((mod) => {
+      this._data = mod;
+      this.forceUpdate();
+    });
+    this._onThemeEvt = (e) => this.setState({ theme: e.detail.theme });
+    window.addEventListener(THEME_EVENT, this._onThemeEvt);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener(THEME_EVENT, this._onThemeEvt);
+  }
+
+  downloadReport() {
+    if (!this._data) return;
+    const e = this._data.getEvent(this._eventId);
+    const blob = new Blob([e.reportMarkdown], { type: "text/markdown" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `incident_report_event_${e.id}.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  renderVals() {
+    const d = this._data;
+    const themeName = this.state.theme;
+    const theme = THEMES[themeName];
+    const isDay = themeName === "day";
+    const common = { theme, themeName, nightOpacity: isDay ? 0 : 1, dayOpacity: isDay ? 1 : 0 };
+    const stagesFallback = [
+      { label: "Detect", file: "flagged_conjunctions.json" },
+      { label: "Investigate", file: "risk_assessments/event_N.json" },
+      { label: "Simulate", file: "maneuver_plans/event_N.json" },
+      { label: "Recommend", file: "decisions/event_N.json" },
+      { label: "Report", file: "incident_report_event_N.md" },
+    ];
+    if (!d) {
+      return {
+        ...common,
+        event: { id: 5, objectA: "", objectB: "", generatedAt: "\u2014", tcaUtc: "\u2014", missDistanceText: "\u2014", relVelText: "\u2014", severityVariant: "nominal", severityLabel: "\u2014", urgencyLabel: "\u2014", rationale: "", baselineText: "\u2014", tableRows: [], actionLabel: "\u2014", confidenceColor: theme.accent, confidenceLabel: "\u2014", justification: "", decisionSourcesText: "" },
+        stages: stagesFallback.map((s, i) => ({ ...s, hasNext: i < 4 })),
+        downloadReport: () => {},
+      };
+    }
+    const e = d.getEvent(this._eventId);
+    const meta = d.severityMeta(e.severity);
+    const severityVariant = e.severity === "low" ? "nominal" : e.severity === "medium" ? "caution" : "critical";
+    const confColors = isDay ? { high: "#1F9D6C", medium: "#DB8B00", low: "#E5344B" } : { high: "#3DDC97", medium: "#FFB020", low: "#FF4B5C" };
+    const posColor = isDay ? "#1F9D6C" : "#3DDC97";
+    const negColor = isDay ? "#E5344B" : "#FF4B5C";
+    const nameFor = (n) => (n === "prograde_burn" ? "Prograde Burn" : "Radial Burn");
+
+    const tableRows = e.scoredCandidates.map((c) => ({
+      name: nameFor(c.name),
+      missDist: d.formatKm(c.newMissDistanceKm),
+      risk: `${c.riskReductionPct >= 0 ? "+" : ""}${c.riskReductionPct.toFixed(1)}%`,
+      riskColor: c.riskReductionPct >= 0 ? posColor : negColor,
+      deltaV: c.deltaVms.toFixed(1),
+      schedule: c.scheduleImpact.toFixed(1),
+      score: `${c.score >= 0 ? "+" : ""}${c.score.toFixed(2)}`,
+      scoreColor: c.score >= 0 ? theme.textPrimary : theme.textSecondary,
+    }));
+
+    const stages = [
+      { label: "Detect", file: "flagged_conjunctions.json" },
+      { label: "Investigate", file: `risk_assessments/event_${e.id}.json` },
+      { label: "Simulate", file: `maneuver_plans/event_${e.id}.json` },
+      { label: "Recommend", file: `decisions/event_${e.id}.json` },
+      { label: "Report", file: `incident_report_event_${e.id}.md` },
+    ].map((s, i) => ({ ...s, hasNext: i < 4 }));
+
+    return {
+      ...common,
+      event: {
+        id: e.id,
+        objectA: e.objectA,
+        objectB: e.objectB,
+        generatedAt: d.STATS.generatedAtUtc.replace("T", " ").replace("Z", " UTC").slice(0, 16) + " UTC",
+        tcaUtc: e.tcaUtc,
+        missDistanceText: d.formatKm(e.missDistanceKm),
+        relVelText: d.formatKm(e.relVelocityKmS),
+        severityVariant,
+        severityLabel: meta.label,
+        urgencyLabel: d.urgencyLabel(e.urgency),
+        rationale: e.rationale,
+        baselineText: d.formatKm(e.baselineMissDistanceKm),
+        tableRows,
+        actionLabel: d.actionLabel(e.decision.action),
+        confidenceColor: confColors[e.decision.confidence] || theme.accent,
+        confidenceLabel: e.decision.confidence,
+        justification: e.decision.justification,
+        decisionSourcesText: e.decision.sources.map((f) => d.guidanceLabel(f)).join(", "),
+      },
+      stages,
+      downloadReport: () => this.downloadReport(),
+    };
+  }
+}
+</script>
+</body>
+</html>

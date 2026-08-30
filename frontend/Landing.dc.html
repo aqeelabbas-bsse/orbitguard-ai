@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&amp;family=Inter:wght@400;500&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; height:100%; }
+a { text-decoration:none; }
+@keyframes panelIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+@keyframes sweep { from { background-position:-100% 0,0 0; } to { background-position:200% 0,0 0; } }
+</style>
+</helmet>
+<div style="height:100vh;overflow:hidden;position:relative;font-family:'Inter',sans-serif;color:{{ theme.textPrimary }};transition:color .35s ease">
+  <div style="position:absolute;inset:0;opacity:{{ nightOpacity }};transition:opacity .4s ease;pointer-events:none">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%, #0B0F1A 0%, #05070D 65%)"></div>
+    <div style="position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 6% 15%, rgba(255,255,255,0.8), transparent 60%),radial-gradient(1px 1px at 15% 45%, rgba(255,255,255,0.45), transparent 60%),radial-gradient(1px 1px at 24% 8%, rgba(255,255,255,0.6), transparent 60%),radial-gradient(1.5px 1.5px at 33% 72%, rgba(255,255,255,0.5), transparent 60%),radial-gradient(1px 1px at 41% 30%, rgba(255,255,255,0.35), transparent 60%),radial-gradient(2px 2px at 52% 60%, rgba(255,255,255,0.7), transparent 60%),radial-gradient(1px 1px at 61% 12%, rgba(255,255,255,0.45), transparent 60%),radial-gradient(1.5px 1.5px at 68% 85%, rgba(255,255,255,0.6), transparent 60%),radial-gradient(1px 1px at 77% 40%, rgba(255,255,255,0.3), transparent 60%),radial-gradient(1.5px 1.5px at 85% 65%, rgba(255,255,255,0.9), transparent 60%),radial-gradient(1px 1px at 91% 20%, rgba(255,255,255,0.5), transparent 60%),radial-gradient(1px 1px at 12% 90%, rgba(255,255,255,0.4), transparent 60%),radial-gradient(1px 1px at 46% 88%, rgba(255,255,255,0.55), transparent 60%),radial-gradient(1px 1px at 58% 35%, rgba(255,255,255,0.3), transparent 60%),radial-gradient(1px 1px at 72% 5%, rgba(255,255,255,0.65), transparent 60%),radial-gradient(1.5px 1.5px at 95% 92%, rgba(255,255,255,0.4), transparent 60%),radial-gradient(1px 1px at 3% 55%, rgba(255,255,255,0.5), transparent 60%),radial-gradient(1px 1px at 37% 4%, rgba(255,255,255,0.4), transparent 60%);background-size:300px 300px"></div>
+  </div>
+  <div style="position:absolute;inset:0;opacity:{{ dayOpacity }};transition:opacity .4s ease;pointer-events:none">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, #DCE9F5 0%, #F4F1EA 100%)"></div>
+    <div style="position:absolute;top:-160px;right:-160px;width:680px;height:680px;background:conic-gradient(from 205deg, rgba(255,248,225,0.2) 0deg, transparent 6deg, transparent 26deg, rgba(255,248,225,0.16) 32deg, transparent 38deg, transparent 58deg, rgba(255,248,225,0.16) 64deg, transparent 70deg, transparent 90deg, rgba(255,248,225,0.16) 96deg, transparent 102deg),radial-gradient(circle at 50% 50%, rgba(255,251,235,0.95) 0%, rgba(255,251,235,0.32) 35%, rgba(255,251,235,0) 62%)"></div>
+  </div>
+
+  <dc-import name="TopNav" active="landing" hint-size="100%,60px"></dc-import>
+
+  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.5;pointer-events:none">
+    <div style="width:620px;height:620px;max-width:80vw;max-height:80vw">
+      <dc-import name="OrbitGlobe" variant="ambient" theme="{{ themeName }}" hint-size="620px,620px" style="width:100%;height:100%;display:block"></dc-import>
+    </div>
+  </div>
+  <div style="position:absolute;inset:0;opacity:{{ nightOpacity }};transition:opacity .4s ease;background:radial-gradient(ellipse 46% 48% at 50% 48%, rgba(5,7,13,0.94) 0%, rgba(5,7,13,0.6) 55%, rgba(5,7,13,0) 78%);pointer-events:none"></div>
+  <div style="position:absolute;inset:0;opacity:{{ dayOpacity }};transition:opacity .4s ease;background:radial-gradient(ellipse 46% 48% at 50% 48%, rgba(244,241,234,0.92) 0%, rgba(244,241,234,0.55) 55%, rgba(244,241,234,0) 78%);pointer-events:none"></div>
+
+  <div style="position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 32px;gap:30px">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:16px;animation:panelIn .6s cubic-bezier(0.32,0.72,0,1) backwards">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:{{ theme.accent }};letter-spacing:0.16em;text-transform:uppercase">Agentic Collision Avoidance</div>
+      <div style="font-family:'Space Grotesk',sans-serif;font-size:38px;line-height:1.2;font-weight:600;color:{{ theme.textPrimary }};max-width:720px;letter-spacing:-0.01em">OrbitGuard AI watches every close approach across a live-tracked orbital environment.</div>
+      <p style="font-family:'Inter',sans-serif;font-size:15.5px;line-height:1.7;color:{{ theme.textSecondary }};max-width:560px;margin:0">Detection, RAG-grounded investigation, physics-based maneuver simulation, and a final recommendation &mdash; for every flagged conjunction, run on real tracked-object data.</p>
+    </div>
+
+    <a href="Dashboard.dc.html" style="animation:panelIn .6s cubic-bezier(0.32,0.72,0,1) .08s backwards;position:relative;display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;background:linear-gradient(100deg, transparent 35%, rgba(255,255,255,0.14) 50%, transparent 65%), {{ theme.accentBg }};background-size:260% 100%,100% 100%;background-position:-100% 0,0 0;border:1px solid {{ theme.accentBorder }};color:{{ theme.accent }};font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;transition:transform .2s cubic-bezier(0.32,0.72,0,1),border-color .2s" style-hover="animation:sweep .8s ease;transform:translateY(-2px)">Enter Dashboard &rarr;</a>
+
+    <div style="display:flex;align-items:center;gap:36px;margin-top:8px;animation:panelIn .6s cubic-bezier(0.32,0.72,0,1) .16s backwards">
+      <div style="text-align:center">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:500;color:{{ theme.textPrimary }};font-variant-numeric:tabular-nums">{{ objectsCount }}</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:{{ theme.textSecondary }};letter-spacing:0.08em;margin-top:4px">OBJECTS TRACKED</div>
+      </div>
+      <div style="width:1px;height:32px;background:{{ theme.hairline }}"></div>
+      <div style="text-align:center">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:500;color:{{ theme.textPrimary }};font-variant-numeric:tabular-nums">{{ flaggedCount }}</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:{{ theme.textSecondary }};letter-spacing:0.08em;margin-top:4px">EVENTS FLAGGED</div>
+      </div>
+      <div style="width:1px;height:32px;background:{{ theme.hairline }}"></div>
+      <div style="text-align:center">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:500;color:{{ theme.textPrimary }};font-variant-numeric:tabular-nums">{{ resolvedCount }}</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:{{ theme.textSecondary }};letter-spacing:0.08em;margin-top:4px">EVENTS RESOLVED</div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const THEMES = {
+  night: { accent: "#4FD8FF", accentBg: "rgba(79,216,255,0.14)", accentBorder: "rgba(79,216,255,0.45)", textPrimary: "#E9EEF7", textSecondary: "#8B93A7", hairline: "rgba(255,255,255,0.1)" },
+  day: { accent: "#1B7FB8", accentBg: "rgba(27,127,184,0.12)", accentBorder: "rgba(27,127,184,0.45)", textPrimary: "#1A2130", textSecondary: "#5C6478", hairline: "rgba(0,0,0,0.09)" },
+};
+const THEME_KEY = "orbitguard-theme";
+const THEME_EVENT = "orbitguard-theme-change";
+
+class Component extends DCLogic {
+  state = { objects: 0, flagged: 0, resolved: 0, theme: (typeof localStorage !== "undefined" && localStorage.getItem(THEME_KEY)) || "night" };
+
+  componentDidMount() {
+    import("./data.js").then((mod) => {
+      this._data = mod;
+      this._startCounters(mod.STATS);
+    });
+    this._onThemeEvt = (e) => this.setState({ theme: e.detail.theme });
+    window.addEventListener(THEME_EVENT, this._onThemeEvt);
+  }
+
+  componentWillUnmount() {
+    if (this._raf) cancelAnimationFrame(this._raf);
+    window.removeEventListener(THEME_EVENT, this._onThemeEvt);
+  }
+
+  _startCounters(stats) {
+    const targets = { objects: stats.objectsTracked, flagged: stats.screenedTotal, resolved: stats.maxEventsInvestigated };
+    const duration = 1300;
+    const start = performance.now();
+    const ease = (t) => 1 - Math.pow(1 - t, 3);
+    const tick = () => {
+      const p = Math.min(1, (performance.now() - start) / duration);
+      const e = ease(p);
+      this.setState({
+        objects: Math.round(targets.objects * e),
+        flagged: Math.round(targets.flagged * e),
+        resolved: Math.round(targets.resolved * e),
+      });
+      if (p < 1) this._raf = requestAnimationFrame(tick);
+    };
+    this._raf = requestAnimationFrame(tick);
+  }
+
+  renderVals() {
+    const themeName = this.state.theme;
+    const theme = THEMES[themeName];
+    return {
+      theme,
+      themeName,
+      nightOpacity: themeName === "day" ? 0 : 1,
+      dayOpacity: themeName === "day" ? 1 : 0,
+      objectsCount: this.state.objects,
+      flaggedCount: this.state.flagged,
+      resolvedCount: this.state.resolved,
+    };
+  }
+}
+</script>
+</body>
+</html>

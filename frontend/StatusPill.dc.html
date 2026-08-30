@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@keyframes livepulse { 0%,100% { opacity:1 } 50% { opacity:.5 } }
+</style>
+</helmet>
+<div style="display:inline-flex;align-items:center;gap:7px;padding:5px 12px 5px 9px;border-radius:100px;background:{{ bg }};border:1px solid {{ border }};white-space:nowrap;transition:background .3s ease,border-color .3s ease">
+  <span style="width:6px;height:6px;border-radius:50%;background:{{ dotColor }};box-shadow:0 0 6px {{ dotColor }};animation:livepulse 2.6s ease-in-out infinite;flex:none;transition:background .3s ease"></span>
+  <span style="font-family:'Space Grotesk',sans-serif;font-size:12.5px;font-weight:600;color:{{ dotColor }};letter-spacing:0.02em;transition:color .3s ease">{{ label }}</span>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:160,&quot;height&quot;:40},&quot;variant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;nominal&quot;,&quot;options&quot;:[&quot;nominal&quot;,&quot;caution&quot;,&quot;critical&quot;],&quot;tsType&quot;:&quot;string&quot;},&quot;label&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Nominal&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;night&quot;,&quot;options&quot;:[&quot;night&quot;,&quot;day&quot;],&quot;tsType&quot;:&quot;string&quot;}}">
+const SEVERITY = {
+  night: { nominal: "#3DDC97", caution: "#FFB020", critical: "#FF4B5C" },
+  day: { nominal: "#1F9D6C", caution: "#DB8B00", critical: "#E5344B" },
+};
+
+function hexToRgb(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+}
+
+class Component extends DCLogic {
+  renderVals() {
+    const v = this.props.variant || "nominal";
+    const t = this.props.theme === "day" ? "day" : "night";
+    const color = SEVERITY[t][v] || SEVERITY[t].nominal;
+    const [r, g, b] = hexToRgb(color);
+    return {
+      label: this.props.label || "",
+      dotColor: color,
+      bg: `rgba(${r},${g},${b},0.14)`,
+      border: `rgba(${r},${g},${b},0.4)`,
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+</helmet>
+<div style="position:relative;width:100%;height:100%;overflow:hidden">
+  <canvas ref="{{ canvasRef }}" style="display:block;width:100%;height:100%"></canvas>
+  <sc-if value="{{ notReady }}" hint-placeholder-val="{{ true }}">
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#8B93A7;text-transform:uppercase">Initializing orbit model&hellip;</span>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:900,&quot;height&quot;:600},&quot;variant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;hero&quot;,&quot;options&quot;:[&quot;hero&quot;,&quot;ambient&quot;],&quot;tsType&quot;:&quot;string&quot;},&quot;selectedEventId&quot;:{&quot;editor&quot;:null,&quot;default&quot;:null,&quot;tsType&quot;:&quot;number|null&quot;},&quot;onSelectEvent&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;(id:number)=&gt;void&quot;},&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;night&quot;,&quot;options&quot;:[&quot;night&quot;,&quot;day&quot;],&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { ready: false };
+  canvasRef = React.createRef();
+
+  componentDidMount() {
+    this._alive = true;
+    this._boot();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.selectedEventId !== this.props.selectedEventId) this._focusSelected();
+    if (prevProps.theme !== this.props.theme) this._applyTheme();
+  }
+
+  _accentHex() {
+    return this.props.theme === "day" ? 0x1b7fb8 : 0x4fd8ff;
+  }
+
+  _severityColors() {
+    return this.props.theme === "day"
+      ? { low: 0x1f9d6c, medium: 0xdb8b00, high: 0xe5344b }
+      : { low: 0x3ddc97, medium: 0xffb020, high: 0xff4b5c };
+  }
+
+  _applyTheme() {
+    if (!this.gridMat) return;
+    const isDay = this.props.theme === "day";
+    const accent = this._accentHex();
+    this.gridMat.color.setHex(accent);
+    (this._cyanRingMats || []).forEach((m) => m.color.setHex(accent));
+    const sevColors = this._severityColors();
+    if (this._markers) {
+      Object.values(this._markers).forEach((m) => {
+        m.dot.material.color.setHex(sevColors[m.severity] != null ? sevColors[m.severity] : accent);
+        m.haloRing.material.color.setHex(accent);
+      });
+    }
+    if (this.earthMat) this.earthMat.color.setHex(this._earthColor());
+    if (this.ambientLight) {
+      this.ambientLight.color.setHex(isDay ? 0xfff3de : 0x2a3a4a);
+      this.ambientLight.intensity = isDay ? 1.15 : 0.9;
+    }
+    if (this.sunLight) {
+      this.sunLight.color.setHex(isDay ? 0xfff2d6 : 0x9fc8e8);
+      this.sunLight.intensity = isDay ? 1.5 : 0.85;
+      this.sunLight.position.set(isDay ? 3.5 : -4, isDay ? 2.6 : 3, isDay ? 3.2 : 5);
+    }
+    if (this.sunSprite) this.sunSprite.visible = isDay;
+  }
+
+  componentWillUnmount() {
+    this._alive = false;
+    if (this._raf) cancelAnimationFrame(this._raf);
+    if (this._ro) this._ro.disconnect();
+    if (this.renderer) this.renderer.dispose();
+  }
+
+  async _boot() {
+    const start = Date.now();
+    while (!window.THREE && Date.now() - start < 8000) await new Promise((r) => setTimeout(r, 50));
+    if (!window.THREE || !this._alive || !this.canvasRef.current) return;
+    this._initScene();
+    this.setState({ ready: true });
+    this._loop();
+  }
+
+  _hashAngle(id) {
+    const x = Math.sin(id * 12.9898) * 43758.5453;
+    return (x - Math.floor(x)) * Math.PI * 2;
+  }
+
+  _earthColor() {
+    return this.props.theme === "day" ? 0x2f7fb5 : 0x0a1420;
+  }
+
+  _initScene() {
+    const THREE = window.THREE;
+    const canvas = this.canvasRef.current;
+    const rect = canvas.parentElement.getBoundingClientRect();
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(38, rect.width / Math.max(rect.height, 1), 0.1, 100);
+    camera.position.set(0, 0.55, 5.4);
+    camera.lookAt(0, 0, 0);
+
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setSize(rect.width, rect.height, false);
+    renderer.setClearColor(0x000000, 0);
+
+    const isDay = this.props.theme === "day";
+    const ambientLight = new THREE.AmbientLight(isDay ? 0xfff3de : 0x2a3a4a, isDay ? 1.15 : 0.9);
+    scene.add(ambientLight);
+    const sunLight = new THREE.DirectionalLight(isDay ? 0xfff2d6 : 0x9fc8e8, isDay ? 1.5 : 0.85);
+    sunLight.position.set(isDay ? 3.5 : -4, isDay ? 2.6 : 3, isDay ? 3.2 : 5);
+    scene.add(sunLight);
+    this.ambientLight = ambientLight;
+    this.sunLight = sunLight;
+
+    const R = 1.7;
+    const globeGroup = new THREE.Group();
+
+    const earthMat = new THREE.MeshStandardMaterial({ color: this._earthColor(), roughness: isDay ? 0.75 : 0.92, metalness: 0.06 });
+    this.earthMat = earthMat;
+    globeGroup.add(new THREE.Mesh(new THREE.SphereGeometry(R, 48, 32), earthMat));
+
+    const gridMat = new THREE.LineBasicMaterial({ color: this._accentHex(), transparent: true, opacity: 0.08 });
+    this.gridMat = gridMat;
+    for (let i = -60; i <= 60; i += 30) {
+      const lat = (i * Math.PI) / 180;
+      const r = R * 1.002 * Math.cos(lat);
+      const y = R * 1.002 * Math.sin(lat);
+      const pts = [];
+      for (let a = 0; a <= 64; a++) {
+        const t = (a / 64) * Math.PI * 2;
+        pts.push(new THREE.Vector3(Math.cos(t) * r, y, Math.sin(t) * r));
+      }
+      globeGroup.add(new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(pts), gridMat));
+    }
+    for (let lon = 0; lon < 360; lon += 30) {
+      const rad = (lon * Math.PI) / 180;
+      const merPts = [];
+      for (let a = 0; a <= 64; a++) {
+        const t = (a / 64) * Math.PI * 2;
+        const x0 = Math.sin(t) * R * 1.002;
+        const y0 = Math.cos(t) * R * 1.002;
+        merPts.push(new THREE.Vector3(x0 * Math.cos(rad), y0, x0 * Math.sin(rad)));
+      }
+      globeGroup.add(new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(merPts), gridMat));
+    }
+
+    const glowCanvas = document.createElement("canvas");
+    glowCanvas.width = 256;
+    glowCanvas.height = 256;
+    const gctx = glowCanvas.getContext("2d");
+    const grad = gctx.createRadialGradient(128, 128, 70, 128, 128, 128);
+    grad.addColorStop(0, "rgba(140,195,255,0.28)");
+    grad.addColorStop(1, "rgba(140,195,255,0)");
+    gctx.fillStyle = grad;
+    gctx.fillRect(0, 0, 256, 256);
+    const glowMat = new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(glowCanvas), transparent: true, depthWrite: false, blending: THREE.AdditiveBlending });
+    const glow = new THREE.Sprite(glowMat);
+    glow.scale.set(R * 2.15, R * 2.15, 1);
+    globeGroup.add(glow);
+
+    const sunGlowCanvas = document.createElement("canvas");
+    sunGlowCanvas.width = 256;
+    sunGlowCanvas.height = 256;
+    const sgctx = sunGlowCanvas.getContext("2d");
+    const sgrad = sgctx.createRadialGradient(128, 128, 0, 128, 128, 128);
+    sgrad.addColorStop(0, "rgba(255,250,235,0.95)");
+    sgrad.addColorStop(0.25, "rgba(255,244,214,0.5)");
+    sgrad.addColorStop(1, "rgba(255,244,214,0)");
+    sgctx.fillStyle = sgrad;
+    sgctx.fillRect(0, 0, 256, 256);
+    const sunSprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(sunGlowCanvas), transparent: true, depthWrite: false, depthTest: false, blending: THREE.AdditiveBlending }));
+    sunSprite.position.set(3.6, 2.6, 2.6);
+    sunSprite.scale.set(2.6, 2.6, 1);
+    sunSprite.visible = isDay;
+    scene.add(sunSprite);
+    this.sunSprite = sunSprite;
+
+    const ringCount = this.props.variant === "ambient" ? 10 : 26;
+    this._cyanRingMats = [];
+    for (let i = 0; i < ringCount; i++) {
+      const isDebris = i % 5 === 0;
+      const radius = R * (isDebris ? 1.07 + (i % 3) * 0.006 : 1.086 + (i % 4) * 0.01);
+      const pts = [];
+      for (let a = 0; a <= 96; a++) {
+        const t = (a / 96) * Math.PI * 2;
+        pts.push(new THREE.Vector3(Math.cos(t) * radius, 0, Math.sin(t) * radius));
+      }
+      const mat = new THREE.LineBasicMaterial({ color: isDebris ? 0xff9d6b : this._accentHex(), transparent: true, opacity: isDebris ? 0.1 : 0.08 + (i % 5) * 0.03 });
+      if (!isDebris) this._cyanRingMats.push(mat);
+      const ring = new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(pts), mat);
+      ring.rotation.x = this._hashAngle(i * 3 + 1);
+      ring.rotation.z = this._hashAngle(i * 7 + 2);
+      globeGroup.add(ring);
+    }
+
+    globeGroup.position.x = this.props.variant === "ambient" ? 0 : R * 1.3;
+    scene.add(globeGroup);
+    this.scene = scene;
+    this.camera = camera;
+    this.renderer = renderer;
+    this.globeGroup = globeGroup;
+    this.canvas = canvas;
+    this._rotY = 0;
+    this._targetRotY = null;
+    this._autoSpeed = this.props.variant === "ambient" ? 0.035 : 0.05;
+
+    if (this.props.variant !== "ambient") {
+      import("./data.js").then(({ EVENTS }) => {
+        const markers = {};
+        const shellR = R * 1.086;
+        const sevColors = this._severityColors();
+        EVENTS.forEach((ev) => {
+          const angle = this._hashAngle(ev.id);
+          const incline = this._hashAngle(ev.id * 5) * 0.35;
+          const x = Math.cos(angle) * shellR;
+          const z = Math.sin(angle) * shellR;
+          const y = Math.sin(incline) * shellR * 0.3;
+          const dot = new THREE.Mesh(new THREE.SphereGeometry(0.03, 16, 16), new THREE.MeshBasicMaterial({ color: sevColors[ev.severity] != null ? sevColors[ev.severity] : this._accentHex() }));
+          dot.position.set(x, y, z);
+          const haloRing = new THREE.Mesh(new THREE.RingGeometry(0.048, 0.06, 32), new THREE.MeshBasicMaterial({ color: this._accentHex(), transparent: true, opacity: 0, side: THREE.DoubleSide }));
+          haloRing.position.copy(dot.position);
+          globeGroup.add(dot);
+          globeGroup.add(haloRing);
+          markers[ev.id] = { dot, haloRing, angle, severity: ev.severity };
+        });
+        this._markers = markers;
+        this._focusSelected();
+      });
+      canvas.style.cursor = "default";
+      canvas.addEventListener("click", (e) => this._onClick(e));
+      canvas.addEventListener("pointermove", (e) => this._onHover(e));
+    }
+
+    this._ro = new ResizeObserver(() => this._onResize());
+    this._ro.observe(canvas.parentElement);
+  }
+
+  _onResize() {
+    if (!this.renderer || !this.canvas.parentElement) return;
+    const rect = this.canvas.parentElement.getBoundingClientRect();
+    if (rect.width < 2 || rect.height < 2) return;
+    this.renderer.setSize(rect.width, rect.height, false);
+    this.camera.aspect = rect.width / rect.height;
+    this.camera.updateProjectionMatrix();
+  }
+
+  _raycastMarker(clientX, clientY) {
+    const THREE = window.THREE;
+    if (!this._markers) return null;
+    const rect = this.canvas.getBoundingClientRect();
+    const mouse = new THREE.Vector2(((clientX - rect.left) / rect.width) * 2 - 1, -((clientY - rect.top) / rect.height) * 2 + 1);
+    const raycaster = new THREE.Raycaster();
+    raycaster.setFromCamera(mouse, this.camera);
+    const entries = Object.entries(this._markers);
+    const hits = raycaster.intersectObjects(entries.map(([, m]) => m.dot));
+    if (!hits.length) return null;
+    const found = entries.find(([, m]) => m.dot === hits[0].object);
+    return found ? found[0] : null;
+  }
+
+  _onClick(e) {
+    const id = this._raycastMarker(e.clientX, e.clientY);
+    if (id && this.props.onSelectEvent) this.props.onSelectEvent(parseInt(id, 10));
+  }
+
+  _onHover(e) {
+    const id = this._raycastMarker(e.clientX, e.clientY);
+    if (this.canvas) this.canvas.style.cursor = id ? "pointer" : "default";
+  }
+
+  _focusSelected() {
+    if (!this._markers) return;
+    const sel = this.props.selectedEventId;
+    Object.entries(this._markers).forEach(([id, m]) => {
+      m.isSelected = parseInt(id, 10) === sel;
+    });
+    if (sel && this._markers[sel]) this._targetRotY = -this._markers[sel].angle;
+  }
+
+  _loop() {
+    if (!this._alive) return;
+    this._raf = requestAnimationFrame(() => this._loop());
+    const t = performance.now() / 1000;
+
+    if (this._targetRotY !== null) {
+      const diff = this._targetRotY - this._rotY;
+      const wrapped = Math.atan2(Math.sin(diff), Math.cos(diff));
+      this._rotY += wrapped * 0.045;
+      if (Math.abs(wrapped) < 0.01) this._targetRotY = null;
+    } else {
+      this._rotY += this._autoSpeed * 0.016;
+    }
+    this.globeGroup.rotation.y = this._rotY;
+
+    if (this._markers) {
+      Object.values(this._markers).forEach((m) => {
+        const pulse = 1 + Math.sin(t * 2.1 + m.angle) * 0.12;
+        m.dot.scale.setScalar(m.isSelected ? pulse * 1.6 : pulse);
+        m.haloRing.material.opacity = m.isSelected ? 0.55 + Math.sin(t * 2.1) * 0.15 : 0;
+        m.haloRing.lookAt(this.camera.position);
+        m.haloRing.scale.setScalar(m.isSelected ? 1.4 + Math.sin(t * 2.1) * 0.25 : 1);
+      });
+    }
+
+    this.renderer.render(this.scene, this.camera);
+  }
+
+  renderVals() {
+    return { canvasRef: this.canvasRef, notReady: !this.state.ready };
+  }
+}
+</script>
+</body>
+</html>

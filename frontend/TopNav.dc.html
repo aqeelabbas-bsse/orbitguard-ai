@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>@keyframes spin { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }</style>
+</helmet>
+<div style="position:fixed;top:20px;left:20px;right:20px;z-index:60;height:60px;border-radius:999px;display:flex;align-items:center;gap:8px;padding:0 12px 0 22px;background:{{ theme.glassBg }};backdrop-filter:blur(24px) saturate(140%);-webkit-backdrop-filter:blur(24px) saturate(140%);border:1px solid {{ theme.glassBorder }};box-shadow:inset 0 1px 0 {{ theme.glassHighlight }}, {{ theme.glassShadow }};transition:background .35s ease,border-color .35s ease,box-shadow .35s ease">
+  <a href="Landing.dc.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;flex:none">
+    <div style="position:relative;width:20px;height:20px;flex:none">
+      <div style="position:absolute;inset:0;border:1.5px solid {{ theme.accent }};border-radius:50%;opacity:0.7;transition:border-color .3s ease"></div>
+      <div style="position:absolute;inset:0;animation:spin 6s linear infinite">
+        <div style="position:absolute;top:-1.5px;left:50%;transform:translateX(-50%);width:3px;height:3px;border-radius:50%;background:{{ theme.accent }};box-shadow:0 0 4px {{ theme.accent }};transition:background .3s ease"></div>
+      </div>
+    </div>
+    <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:{{ theme.textPrimary }};letter-spacing:0.01em;white-space:nowrap;transition:color .3s ease">OrbitGuard<span style="color:{{ theme.accent }};margin-left:5px;font-size:11px;font-weight:600;letter-spacing:0.08em;transition:color .3s ease">AI</span></span>
+  </a>
+  <sc-if value="{{ hasCrumb }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;align-items:center;gap:8px;color:{{ theme.textSecondary }};font-family:'Space Grotesk',sans-serif;font-size:13px;flex:none;transition:color .3s ease">
+      <span style="opacity:0.5">/</span><span style="color:{{ theme.textPrimary }}">{{ crumb }}</span>
+    </div>
+  </sc-if>
+  <nav style="display:flex;align-items:center;gap:22px;margin-left:14px">
+    <sc-if value="{{ dashActive }}" hint-placeholder-val="{{ false }}">
+      <a href="Dashboard.dc.html" style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;text-decoration:none;color:{{ theme.textPrimary }};transition:color .3s ease">Dashboard</a>
+    </sc-if>
+    <sc-if value="{{ dashInactive }}" hint-placeholder-val="{{ true }}">
+      <a href="Dashboard.dc.html" style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:500;text-decoration:none;color:{{ theme.textSecondary }};transition:color .3s ease" style-hover="color:{{ theme.textPrimary }}">Dashboard</a>
+    </sc-if>
+    <sc-if value="{{ aboutActive }}" hint-placeholder-val="{{ false }}">
+      <a href="AboutArchitecture.dc.html" style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;text-decoration:none;color:{{ theme.textPrimary }};transition:color .3s ease">Architecture</a>
+    </sc-if>
+    <sc-if value="{{ aboutInactive }}" hint-placeholder-val="{{ true }}">
+      <a href="AboutArchitecture.dc.html" style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:500;text-decoration:none;color:{{ theme.textSecondary }};transition:color .3s ease" style-hover="color:{{ theme.textPrimary }}">Architecture</a>
+    </sc-if>
+  </nav>
+  <div style="flex:1"></div>
+  <div style="display:flex;align-items:center;gap:16px;flex:none">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:{{ theme.textSecondary }};display:flex;align-items:center;gap:8px;font-variant-numeric:tabular-nums;white-space:nowrap;transition:color .3s ease">
+      <span>{{ dateText }}</span><span style="color:{{ theme.textPrimary }};letter-spacing:0.02em;transition:color .3s ease">{{ clockText }}</span><span style="opacity:0.6">UTC</span>
+    </div>
+    <div style="width:1px;height:18px;background:{{ theme.hairline }};flex:none;transition:background .3s ease"></div>
+    <dc-import name="StatusPill" variant="{{ statusVariant }}" label="{{ statusLabel }}" theme="{{ themeName }}" hint-size="110px,30px" style="flex:none"></dc-import>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:{{ theme.textSecondary }};font-variant-numeric:tabular-nums;white-space:nowrap;transition:color .3s ease">{{ objectsTracked }} tracked &middot; {{ screenedTotal }} flagged</div>
+    <div style="width:1px;height:18px;background:{{ theme.hairline }};flex:none;transition:background .3s ease"></div>
+    <button onClick="{{ toggleTheme }}" aria-label="Toggle day/night theme" style="width:34px;height:34px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;background:{{ theme.toggleBg }};border:1px solid {{ theme.glassBorder }};cursor:pointer;padding:0;transition:background .3s ease,border-color .3s ease">
+      <sc-if value="{{ isNight }}" hint-placeholder-val="{{ true }}">
+        <div style="position:relative;width:14px;height:14px;flex:none">
+          <div style="position:absolute;inset:0;border-radius:50%;background:#CBD5E6"></div>
+          <div style="position:absolute;top:-3px;right:-3px;width:12px;height:12px;border-radius:50%;background:{{ theme.toggleBg }};transition:background .3s ease"></div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isDay }}" hint-placeholder-val="{{ false }}">
+        <div style="position:relative;width:14px;height:14px;flex:none">
+          <div style="position:absolute;inset:2.5px;border-radius:50%;background:#F5A623"></div>
+          <div style="position:absolute;top:-3px;left:6px;width:2px;height:3px;background:#F5A623;border-radius:1px"></div>
+          <div style="position:absolute;bottom:-3px;left:6px;width:2px;height:3px;background:#F5A623;border-radius:1px"></div>
+          <div style="position:absolute;left:-3px;top:6px;width:3px;height:2px;background:#F5A623;border-radius:1px"></div>
+          <div style="position:absolute;right:-3px;top:6px;width:3px;height:2px;background:#F5A623;border-radius:1px"></div>
+        </div>
+      </sc-if>
+    </button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:100},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;dashboard&quot;,&quot;options&quot;:[&quot;dashboard&quot;,&quot;about&quot;,&quot;landing&quot;],&quot;tsType&quot;:&quot;string&quot;},&quot;crumb&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+const THEMES = {
+  night: { glassBg: "rgba(230,240,255,0.10)", glassBorder: "rgba(255,255,255,0.14)", glassHighlight: "rgba(255,255,255,0.25)", glassShadow: "0 8px 28px rgba(0,0,0,0.45)", accent: "#4FD8FF", textPrimary: "#E9EEF7", textSecondary: "#8B93A7", toggleBg: "rgba(255,255,255,0.06)", hairline: "rgba(255,255,255,0.1)" },
+  day: { glassBg: "rgba(255,255,255,0.6)", glassBorder: "rgba(0,0,0,0.08)", glassHighlight: "rgba(255,255,255,0.85)", glassShadow: "0 8px 24px rgba(31,45,70,0.16)", accent: "#1B7FB8", textPrimary: "#1A2130", textSecondary: "#5C6478", toggleBg: "rgba(0,0,0,0.045)", hairline: "rgba(0,0,0,0.09)" },
+};
+const THEME_KEY = "orbitguard-theme";
+const THEME_EVENT = "orbitguard-theme-change";
+
+class Component extends DCLogic {
+  state = { now: new Date(), stats: null, status: null, theme: (typeof localStorage !== "undefined" && localStorage.getItem(THEME_KEY)) || "night" };
+
+  componentDidMount() {
+    this._tick = setInterval(() => this.setState({ now: new Date() }), 1000);
+    import("./data.js").then(({ STATS, missionStatus }) => {
+      this.setState({ stats: STATS, status: missionStatus() });
+    });
+    this._onThemeEvt = (e) => this.setState({ theme: e.detail.theme });
+    window.addEventListener(THEME_EVENT, this._onThemeEvt);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this._tick);
+    window.removeEventListener(THEME_EVENT, this._onThemeEvt);
+  }
+
+  toggleTheme() {
+    const next = this.state.theme === "night" ? "day" : "night";
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
+    window.dispatchEvent(new CustomEvent(THEME_EVENT, { detail: { theme: next } }));
+    this.setState({ theme: next });
+  }
+
+  renderVals() {
+    const p = (n) => String(n).padStart(2, "0");
+    const d = this.state.now;
+    const months = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+    const active = this.props.active || "dashboard";
+    const statusMap = { Nominal: "nominal", Monitoring: "caution", "Action Required": "critical" };
+    const statusLabel = this.state.status ? this.state.status.label : "Nominal";
+    const themeName = this.state.theme;
+    return {
+      theme: THEMES[themeName],
+      themeName,
+      isNight: themeName === "night",
+      isDay: themeName === "day",
+      toggleTheme: () => this.toggleTheme(),
+      clockText: `${p(d.getUTCHours())}:${p(d.getUTCMinutes())}:${p(d.getUTCSeconds())}`,
+      dateText: `${p(d.getUTCDate())} ${months[d.getUTCMonth()]}`,
+      dashActive: active === "dashboard",
+      dashInactive: active !== "dashboard",
+      aboutActive: active === "about",
+      aboutInactive: active !== "about",
+      hasCrumb: !!this.props.crumb,
+      crumb: this.props.crumb || "",
+      statusVariant: statusMap[statusLabel] || "nominal",
+      statusLabel,
+      objectsTracked: this.state.stats ? this.state.stats.objectsTracked : "\u2014",
+      screenedTotal: this.state.stats ? this.state.stats.screenedTotal : "\u2014",
+    };
+  }
+}
+</script>
+</body>
+</html>
